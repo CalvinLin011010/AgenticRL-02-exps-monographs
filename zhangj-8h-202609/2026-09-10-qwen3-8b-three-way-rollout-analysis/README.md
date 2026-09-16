@@ -10,6 +10,7 @@
 - [Step-100 validation 汇总](./data/validation_step100_summary.csv)
 - [独立评测汇总](./data/independent_evaluation_summary.csv)
 - [来源与定义 manifest](./data/source_manifest.json)
+- [Seed-OSS SWE-bench Verified 200 题典型 Rollout 数值分析](./seed-oss-swebench-verified-200-typical-rollouts/README.md)
 
 ## 统计口径
 

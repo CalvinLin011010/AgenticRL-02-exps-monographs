@@ -1,0 +1,24 @@
+{
+  "experiment": "seed-oss-36b-instruct-swebench-verified-stratified-200",
+  "ordered_instance_ids_sha256": "0c07101bbea57ccb4af0cd18e3a558fc38e552008faf820c5caf308e3db2fe6e",
+  "source_revision": "ee3bbc1d46f564b972304f7c40a4567ba314e8d2",
+  "source_branch": "swe-bench/qwen3-8b-training-kickoff-20260914",
+  "files": {
+    "results": {
+      "path": "/gemini/space/TablePipeline-lr/runtime/experiments/swebench_seed_oss_36b_inference_20260914/verified_stratified_200/sample200/swe_results_20260915_133213.json",
+      "sha256": "1925c29772c6be926dc1256351eaefd666834479662f3bac053dd8da15222f77"
+    },
+    "events": {
+      "path": "/gemini/space/TablePipeline-lr/runtime/experiments/swebench_seed_oss_36b_inference_20260914/verified_stratified_200/sample200/events.jsonl",
+      "sha256": "a43dcdceb52aa7c2d192ebac3ae18bedeff6a6e6d3ecc1502c8c556bd3c70db3"
+    },
+    "launch_config": {
+      "path": "/gemini/space/TablePipeline-lr/runtime/experiments/swebench_seed_oss_36b_inference_20260914/verified_stratified_200/sample200/launch_config.json",
+      "sha256": "6cfb50acd4cbe29cf00c2756008f7b01af332dfb5d26c041cc2e53912ea6bd1a"
+    },
+    "instances": {
+      "path": "/gemini/space/TablePipeline-lr/lr/00-docs/experiments/shared/settings/datasets/2026-09-14-swebench-verified-stratified-200/instances.csv",
+      "sha256": "6b684d86a080659483276c45833971920b55f0a7f4c5f1a39c0df569a007e2c9"
+    }
+  }
+}
