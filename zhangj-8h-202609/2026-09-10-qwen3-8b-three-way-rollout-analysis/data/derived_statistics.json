@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-09-14",
+  "method": {
+    "validation_interval": "95% Wilson score interval",
+    "pairwise_test": "two-sided pooled two-proportion z-test, unadjusted",
+    "training_trend": "unweighted mean over steps 21-60 versus 61-100; Pearson correlation with global step",
+    "caveat": "single-seed descriptive analysis; intervals quantify finite 150-question sampling only, not training-seed variance"
+  },
+  "step100_question_success": {
+    "trace_foldgrpo": {"successes": 53, "n": 150, "rate": 0.353333, "wilson95": [0.281, 0.433]},
+    "no_trace": {"successes": 49, "n": 150, "rate": 0.326667, "wilson95": [0.257, 0.405]},
+    "trace_only": {"successes": 62, "n": 150, "rate": 0.413333, "wilson95": [0.338, 0.493]}
+  },
+  "step100_pairwise": {
+    "trace_only_minus_no_trace": {"delta_pp": 8.67, "z": 1.555, "p_two_sided": 0.120},
+    "trace_only_minus_trace_foldgrpo": {"delta_pp": 6.00, "z": 1.069, "p_two_sided": 0.285},
+    "trace_foldgrpo_minus_no_trace": {"delta_pp": 2.67, "z": 0.488, "p_two_sided": 0.626}
+  },
+  "independent_evaluation": {
+    "no_trace": {"successes": 24, "n": 150, "rate": 0.16, "wilson95": [0.110, 0.227]},
+    "trace_only": {"successes": 22, "n": 150, "rate": 0.146667, "wilson95": [0.099, 0.212]},
+    "trace_only_minus_no_trace": {"delta_pp": -1.33, "z": -0.320, "p_two_sided": 0.749}
+  },
+  "training_score_trend": {
+    "trace_foldgrpo": {"step_mean": 0.2625, "steps_21_60": 0.275, "steps_61_100": 0.25, "step_correlation": -0.0508},
+    "no_trace": {"step_mean": 0.296875, "steps_21_60": 0.3125, "steps_61_100": 0.28125, "step_correlation": -0.1036},
+    "trace_only": {"step_mean": 0.28125, "steps_21_60": 0.31875, "steps_61_100": 0.24375, "step_correlation": -0.1437}
+  }
+}

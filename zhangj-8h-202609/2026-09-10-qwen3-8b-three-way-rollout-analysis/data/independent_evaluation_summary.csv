@@ -1,0 +1,3 @@
+run,label,count,score,turns_sum,turns_mean,search_sum,search_mean,open_sum,open_mean,branch_sum,branch_mean,summary_sum,summary_mean,forced_sum,forced_mean,easy_count,easy_score,medium_count,medium_score,hard_count,hard_score
+no_trace,no-Trace,150,0.16,2346.0,15.64,281.0,1.8733333333333333,488.0,3.2533333333333334,144.0,0.96,25.0,0.16666666666666666,3.0,0.02,50,0.38,50,0.08,50,0.02
+trace_only,Trace-only,150,0.14666666666666667,2154.0,14.36,320.0,2.1333333333333333,348.0,2.32,171.0,1.14,10.0,0.06666666666666667,0.0,0.0,50,0.36,50,0.08,50,0.0

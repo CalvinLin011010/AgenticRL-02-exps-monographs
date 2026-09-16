@@ -1,0 +1,36 @@
+{
+  "comparison": {
+    "trace_foldgrpo": "base_weight=1 + alpha_trace=0.2",
+    "no_trace": "FoldGRPO without Trace",
+    "trace_only": "base_weight=0 + alpha_trace=0.2"
+  },
+  "common_training_interval": [
+    21,
+    100
+  ],
+  "validation_step": 100,
+  "definitions": {
+    "raw_rollouts": "saved JSONL trajectory rows",
+    "retained_rollouts": "num_unique_gen_uids * avg_trajs_per_gen_uid",
+    "question_success_rate": "val/avg_score after question aggregation",
+    "trajectory_success_rate": "val/raw_environment_reward over saved trajectories",
+    "duplicate_search": "duplicate normalized search call body in a transcript",
+    "at_limit_vs_overflow": "at_limit reaches 32768; overflow is separately logged after truncation"
+  },
+  "sources": {
+    "trace_foldgrpo": {
+      "root": "/gemini/space/TablePipeline-lr/runtime/experiments/browsecomp_qwen3_8b_trace_long_fix_20260904_2248",
+      "metrics": "/gemini/space/TablePipeline-lr/runtime/experiments/browsecomp_qwen3_8b_trace_long_fix_20260904_2248/train/metrics.jsonl"
+    },
+    "no_trace": {
+      "root": "/gemini/space/TablePipeline-lr/runtime/experiments/browsecomp_qwen3_8b_ablation_no_trace_20260906_0200",
+      "metrics": "/gemini/space/TablePipeline-lr/lr/Table-FA/Table-FA-1/context_folding_ablation/browsecomp_qwen3_8b_ablation_no_trace_20260906_0200.jsonl"
+    },
+    "trace_only": {
+      "root": "/gemini/space/TablePipeline-lr/runtime/experiments/browsecomp_qwen3_8b_trace_only_20260909_v2",
+      "metrics": "/gemini/space/TablePipeline-lr/runtime/experiments/browsecomp_qwen3_8b_trace_only_20260909_v2/train/metrics.jsonl"
+    }
+  },
+  "public_reference": "https://calvinlin011010.github.io/Agentic_RL/20260825-FoldAgent_Trace/",
+  "public_reference_note": "29-case diagnostic: 9/29 success, 44.8% repeated-search cases, 65.5% main-fold cases; definition reference only, not a numeric baseline."
+}
