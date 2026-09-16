@@ -1,0 +1,2172 @@
+[
+  {
+    "case": {
+      "question_index": 2,
+      "reference_answer": "Irving",
+      "event_index": 2,
+      "event_type": "search",
+      "action": "19th century architect born died 20th century sibling doctor poet parent séance",
+      "coverage_before": 0.0,
+      "coverage_after": 1.0,
+      "first_observation_gold_event": 2
+    },
+    "meta": {
+      "prefix_tokens": 2433,
+      "target_tokens": 42,
+      "prefix_truncated": false,
+      "target_truncated": false,
+      "max_context_tokens": 24576,
+      "scoring": "teacher_forced historical decoded action under hf_global_step_100",
+      "entropy": "full vocabulary Shannon entropy from model logits (nats)"
+    },
+    "tokens": [
+      {
+        "token_index": 0,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.5224901517285616e-07
+      },
+      {
+        "token_index": 1,
+        "token_id": 1688,
+        "token_text": "function",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 4.003044011824386e-07
+      },
+      {
+        "token_index": 2,
+        "token_id": 96598,
+        "token_text": "=search",
+        "logprob": -0.0009469077922403812,
+        "probability": 0.9990535378456116,
+        "entropy_nats": 0.0076868305914103985
+      },
+      {
+        "token_index": 3,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -3.576278118089249e-07,
+        "probability": 0.9999996423721313,
+        "entropy_nats": 6.167500487208599e-06
+      },
+      {
+        "token_index": 4,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 3.765771722230582e-11
+      },
+      {
+        "token_index": 5,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 4.517355023381242e-08
+      },
+      {
+        "token_index": 6,
+        "token_id": 79194,
+        "token_text": "=query",
+        "logprob": -0.002476959954947233,
+        "probability": 0.9975261092185974,
+        "entropy_nats": 0.017330538481473923
+      },
+      {
+        "token_index": 7,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -0.02091437578201294,
+        "probability": 0.9793028235435486,
+        "entropy_nats": 0.11461304128170013
+      },
+      {
+        "token_index": 8,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -2.371785879135132,
+        "probability": 0.09331393241882324,
+        "entropy_nats": 0.4285481870174408
+      },
+      {
+        "token_index": 9,
+        "token_id": 24,
+        "token_text": "9",
+        "logprob": -2.3841855067985307e-07,
+        "probability": 0.9999997615814209,
+        "entropy_nats": 4.547389380604727e-06
+      },
+      {
+        "token_index": 10,
+        "token_id": 339,
+        "token_text": "th",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 6.360880711042682e-09
+      },
+      {
+        "token_index": 11,
+        "token_id": 9294,
+        "token_text": " century",
+        "logprob": -0.00011312322021694854,
+        "probability": 0.9998869299888611,
+        "entropy_nats": 0.0011922733392566442
+      },
+      {
+        "token_index": 12,
+        "token_id": 11470,
+        "token_text": " architect",
+        "logprob": -0.08942794799804688,
+        "probability": 0.9144542217254639,
+        "entropy_nats": 0.32572340965270996
+      },
+      {
+        "token_index": 13,
+        "token_id": 9223,
+        "token_text": " born",
+        "logprob": -0.003390755970031023,
+        "probability": 0.9966149926185608,
+        "entropy_nats": 0.02511504292488098
+      },
+      {
+        "token_index": 14,
+        "token_id": 8469,
+        "token_text": " died",
+        "logprob": -0.005569180008023977,
+        "probability": 0.9944462776184082,
+        "entropy_nats": 0.03565957397222519
+      },
+      {
+        "token_index": 15,
+        "token_id": 220,
+        "token_text": " ",
+        "logprob": -1.1920928244535389e-07,
+        "probability": 0.9999998807907104,
+        "entropy_nats": 1.7277237702728598e-06
+      },
+      {
+        "token_index": 16,
+        "token_id": 17,
+        "token_text": "2",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.4571878043389006e-07
+      },
+      {
+        "token_index": 17,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 9.899442376948286e-11
+      },
+      {
+        "token_index": 18,
+        "token_id": 339,
+        "token_text": "th",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 8.412930768697535e-11
+      },
+      {
+        "token_index": 19,
+        "token_id": 9294,
+        "token_text": " century",
+        "logprob": -5.960462772236497e-07,
+        "probability": 0.9999993443489075,
+        "entropy_nats": 1.0076073522213846e-05
+      },
+      {
+        "token_index": 20,
+        "token_id": 44223,
+        "token_text": " sibling",
+        "logprob": -5.8412379075889476e-06,
+        "probability": 0.999994158744812,
+        "entropy_nats": 7.894189184298739e-05
+      },
+      {
+        "token_index": 21,
+        "token_id": 10668,
+        "token_text": " doctor",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.221890073566101e-07
+      },
+      {
+        "token_index": 22,
+        "token_id": 39260,
+        "token_text": " poet",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.0540337598285987e-06
+      },
+      {
+        "token_index": 23,
+        "token_id": 2681,
+        "token_text": " parent",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 6.021881517881411e-07
+      },
+      {
+        "token_index": 24,
+        "token_id": 18744,
+        "token_text": " sé",
+        "logprob": -5.960462772236497e-07,
+        "probability": 0.9999993443489075,
+        "entropy_nats": 9.890546607493889e-06
+      },
+      {
+        "token_index": 25,
+        "token_id": 681,
+        "token_text": "ance",
+        "logprob": -5.960462772236497e-07,
+        "probability": 0.9999993443489075,
+        "entropy_nats": 1.039410835801391e-05
+      },
+      {
+        "token_index": 26,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": -0.1368851512670517,
+        "probability": 0.8720704317092896,
+        "entropy_nats": 0.41843461990356445
+      },
+      {
+        "token_index": 27,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 8.739106327482205e-09
+      },
+      {
+        "token_index": 28,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -2.3841855067985307e-07,
+        "probability": 0.9999997615814209,
+        "entropy_nats": 3.8997040974209085e-06
+      },
+      {
+        "token_index": 29,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": -0.0009114163694903255,
+        "probability": 0.9990890622138977,
+        "entropy_nats": 0.0072888038121163845
+      },
+      {
+        "token_index": 30,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 9.034744508085168e-09
+      },
+      {
+        "token_index": 31,
+        "token_id": 91017,
+        "token_text": "=top",
+        "logprob": -0.000129691296024248,
+        "probability": 0.9998703002929688,
+        "entropy_nats": 0.0013622685801237822
+      },
+      {
+        "token_index": 32,
+        "token_id": 74,
+        "token_text": "k",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 5.3112679185285394e-12
+      },
+      {
+        "token_index": 33,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -2.3841855067985307e-07,
+        "probability": 0.9999997615814209,
+        "entropy_nats": 3.3660774079180555e-06
+      },
+      {
+        "token_index": 34,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -0.02998274564743042,
+        "probability": 0.9704622030258179,
+        "entropy_nats": 0.1345897614955902
+      },
+      {
+        "token_index": 35,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": -0.0008291144040413201,
+        "probability": 0.999171257019043,
+        "entropy_nats": 0.0068223983980715275
+      },
+      {
+        "token_index": 36,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 3.5174679835492384e-10
+      },
+      {
+        "token_index": 37,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 4.053103808132619e-08
+      },
+      {
+        "token_index": 38,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -1.4305104514278355e-06,
+        "probability": 0.9999985694885254,
+        "entropy_nats": 1.9982318917755038e-05
+      },
+      {
+        "token_index": 39,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 4.125305963498249e-08
+      },
+      {
+        "token_index": 40,
+        "token_id": 1688,
+        "token_text": "function",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 9.264471856340606e-09
+      },
+      {
+        "token_index": 41,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -0.00013636612857226282,
+        "probability": 0.9998636245727539,
+        "entropy_nats": 0.0013932312140241265
+      }
+    ]
+  },
+  {
+    "case": {
+      "question_index": 7,
+      "reference_answer": "Eno Ebele Jerry",
+      "event_index": 3,
+      "event_type": "search",
+      "action": "2018 podcast 6 episodes West African pastor married with child same name as husband",
+      "coverage_before": 0.0,
+      "coverage_after": 1.0,
+      "first_observation_gold_event": 3
+    },
+    "meta": {
+      "prefix_tokens": 8893,
+      "target_tokens": 42,
+      "prefix_truncated": false,
+      "target_truncated": false,
+      "max_context_tokens": 24576,
+      "scoring": "teacher_forced historical decoded action under hf_global_step_100",
+      "entropy": "full vocabulary Shannon entropy from model logits (nats)"
+    },
+    "tokens": [
+      {
+        "token_index": 0,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": -3.814689989667386e-06,
+        "probability": 0.9999962449073792,
+        "entropy_nats": 5.3343235776992515e-05
+      },
+      {
+        "token_index": 1,
+        "token_id": 1688,
+        "token_text": "function",
+        "logprob": -0.0002051381452474743,
+        "probability": 0.9997949004173279,
+        "entropy_nats": 0.001960878958925605
+      },
+      {
+        "token_index": 2,
+        "token_id": 96598,
+        "token_text": "=search",
+        "logprob": -1.1437811851501465,
+        "probability": 0.3186120092868805,
+        "entropy_nats": 0.6658270955085754
+      },
+      {
+        "token_index": 3,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -7.152555099310121e-07,
+        "probability": 0.9999992847442627,
+        "entropy_nats": 1.1062882549595088e-05
+      },
+      {
+        "token_index": 4,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 6.362114390867646e-08
+      },
+      {
+        "token_index": 5,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 3.9349967551061127e-07
+      },
+      {
+        "token_index": 6,
+        "token_id": 79194,
+        "token_text": "=query",
+        "logprob": -7.867782187531702e-06,
+        "probability": 0.9999921917915344,
+        "entropy_nats": 0.0001006769307423383
+      },
+      {
+        "token_index": 7,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -0.06107129156589508,
+        "probability": 0.9407562017440796,
+        "entropy_nats": 0.34231388568878174
+      },
+      {
+        "token_index": 8,
+        "token_id": 17,
+        "token_text": "2",
+        "logprob": -0.012968955561518669,
+        "probability": 0.9871147871017456,
+        "entropy_nats": 0.0914640873670578
+      },
+      {
+        "token_index": 9,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": -1.311301275563892e-06,
+        "probability": 0.9999986886978149,
+        "entropy_nats": 2.136856892320793e-05
+      },
+      {
+        "token_index": 10,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -0.0002627027570270002,
+        "probability": 0.9997373223304749,
+        "entropy_nats": 0.002436335664242506
+      },
+      {
+        "token_index": 11,
+        "token_id": 23,
+        "token_text": "8",
+        "logprob": -8.344646857949556e-07,
+        "probability": 0.9999991059303284,
+        "entropy_nats": 1.3256473721412476e-05
+      },
+      {
+        "token_index": 12,
+        "token_id": 17711,
+        "token_text": " podcast",
+        "logprob": -8.153582894010469e-05,
+        "probability": 0.9999184608459473,
+        "entropy_nats": 0.0009712250321172178
+      },
+      {
+        "token_index": 13,
+        "token_id": 220,
+        "token_text": " ",
+        "logprob": -7.501034736633301,
+        "probability": 0.0005525123560801148,
+        "entropy_nats": 0.009082507342100143
+      },
+      {
+        "token_index": 14,
+        "token_id": 21,
+        "token_text": "6",
+        "logprob": -1.9907753085135482e-05,
+        "probability": 0.999980092048645,
+        "entropy_nats": 0.00027512895758263767
+      },
+      {
+        "token_index": 15,
+        "token_id": 17770,
+        "token_text": " episodes",
+        "logprob": -1.0728830375228426e-06,
+        "probability": 0.999998927116394,
+        "entropy_nats": 1.7979433323489502e-05
+      },
+      {
+        "token_index": 16,
+        "token_id": 4312,
+        "token_text": " West",
+        "logprob": -0.2058132290840149,
+        "probability": 0.8139851093292236,
+        "entropy_nats": 0.7132720947265625
+      },
+      {
+        "token_index": 17,
+        "token_id": 11643,
+        "token_text": " African",
+        "logprob": -2.578889846801758,
+        "probability": 0.07585817575454712,
+        "entropy_nats": 0.2685384750366211
+      },
+      {
+        "token_index": 18,
+        "token_id": 42944,
+        "token_text": " pastor",
+        "logprob": -0.0005057962844148278,
+        "probability": 0.9994943737983704,
+        "entropy_nats": 0.005128536839038134
+      },
+      {
+        "token_index": 19,
+        "token_id": 12224,
+        "token_text": " married",
+        "logprob": -0.257355272769928,
+        "probability": 0.7730935215950012,
+        "entropy_nats": 0.7444401383399963
+      },
+      {
+        "token_index": 20,
+        "token_id": 448,
+        "token_text": " with",
+        "logprob": -1.492861270904541,
+        "probability": 0.22472873330116272,
+        "entropy_nats": 1.2174376249313354
+      },
+      {
+        "token_index": 21,
+        "token_id": 1682,
+        "token_text": " child",
+        "logprob": -5.081557750701904,
+        "probability": 0.006210227496922016,
+        "entropy_nats": 0.3310033977031708
+      },
+      {
+        "token_index": 22,
+        "token_id": 1852,
+        "token_text": " same",
+        "logprob": -2.479843854904175,
+        "probability": 0.08375629782676697,
+        "entropy_nats": 0.38043028116226196
+      },
+      {
+        "token_index": 23,
+        "token_id": 829,
+        "token_text": " name",
+        "logprob": -1.7022255659103394,
+        "probability": 0.1822773963212967,
+        "entropy_nats": 0.4818624258041382
+      },
+      {
+        "token_index": 24,
+        "token_id": 438,
+        "token_text": " as",
+        "logprob": -0.009425780735909939,
+        "probability": 0.9906185269355774,
+        "entropy_nats": 0.05598244443535805
+      },
+      {
+        "token_index": 25,
+        "token_id": 9972,
+        "token_text": " husband",
+        "logprob": -1.4305104514278355e-06,
+        "probability": 0.9999985694885254,
+        "entropy_nats": 2.0560468328767456e-05
+      },
+      {
+        "token_index": 26,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": -0.006741280667483807,
+        "probability": 0.993281364440918,
+        "entropy_nats": 0.051264647394418716
+      },
+      {
+        "token_index": 27,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.4774666823313964e-08
+      },
+      {
+        "token_index": 28,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -3.576278118089249e-07,
+        "probability": 0.9999996423721313,
+        "entropy_nats": 6.946755547687644e-06
+      },
+      {
+        "token_index": 29,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": -0.003177833277732134,
+        "probability": 0.996827244758606,
+        "entropy_nats": 0.02142435684800148
+      },
+      {
+        "token_index": 30,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.8758572650767746e-07
+      },
+      {
+        "token_index": 31,
+        "token_id": 91017,
+        "token_text": "=top",
+        "logprob": -2.3841855067985307e-07,
+        "probability": 0.9999997615814209,
+        "entropy_nats": 4.617836111719953e-06
+      },
+      {
+        "token_index": 32,
+        "token_id": 74,
+        "token_text": "k",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 6.770915772502661e-11
+      },
+      {
+        "token_index": 33,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -2.3841855067985307e-07,
+        "probability": 0.9999997615814209,
+        "entropy_nats": 3.1657157251174795e-06
+      },
+      {
+        "token_index": 34,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -0.019244154915213585,
+        "probability": 0.9809398055076599,
+        "entropy_nats": 0.09917297959327698
+      },
+      {
+        "token_index": 35,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": -0.0018067717319354415,
+        "probability": 0.9981948733329773,
+        "entropy_nats": 0.014445312321186066
+      },
+      {
+        "token_index": 36,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": -1.1920928244535389e-07,
+        "probability": 0.9999998807907104,
+        "entropy_nats": 1.5455779021067428e-06
+      },
+      {
+        "token_index": 37,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 4.2599317850999796e-08
+      },
+      {
+        "token_index": 38,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -5.960462772236497e-07,
+        "probability": 0.9999993443489075,
+        "entropy_nats": 9.218015293299686e-06
+      },
+      {
+        "token_index": 39,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": -1.7881377516459906e-06,
+        "probability": 0.9999982118606567,
+        "entropy_nats": 2.5121182261500508e-05
+      },
+      {
+        "token_index": 40,
+        "token_id": 1688,
+        "token_text": "function",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.7535784852261713e-07
+      },
+      {
+        "token_index": 41,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -1.0561318397521973,
+        "probability": 0.34779852628707886,
+        "entropy_nats": 0.6649265885353088
+      }
+    ]
+  },
+  {
+    "case": {
+      "question_index": 15,
+      "reference_answer": "The Dial",
+      "event_index": 4,
+      "event_type": "search",
+      "action": "renowned writer 19th century editors lived together no one bored in home",
+      "coverage_before": 0.0,
+      "coverage_after": 1.0,
+      "first_observation_gold_event": 4
+    },
+    "meta": {
+      "prefix_tokens": 2021,
+      "target_tokens": 40,
+      "prefix_truncated": false,
+      "target_truncated": false,
+      "max_context_tokens": 24576,
+      "scoring": "teacher_forced historical decoded action under hf_global_step_100",
+      "entropy": "full vocabulary Shannon entropy from model logits (nats)"
+    },
+    "tokens": [
+      {
+        "token_index": 0,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 7.301903792722442e-07
+      },
+      {
+        "token_index": 1,
+        "token_id": 1688,
+        "token_text": "function",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.6227056676143548e-07
+      },
+      {
+        "token_index": 2,
+        "token_id": 96598,
+        "token_text": "=search",
+        "logprob": -0.08913019299507141,
+        "probability": 0.9147264957427979,
+        "entropy_nats": 0.29285693168640137
+      },
+      {
+        "token_index": 3,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.1380306474961799e-08
+      },
+      {
+        "token_index": 4,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.78209931620682e-12
+      },
+      {
+        "token_index": 5,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": -1.2397689715726301e-05,
+        "probability": 0.9999876618385315,
+        "entropy_nats": 0.00016385682101827115
+      },
+      {
+        "token_index": 6,
+        "token_id": 79194,
+        "token_text": "=query",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 5.380049969971878e-07
+      },
+      {
+        "token_index": 7,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -0.0012484145117923617,
+        "probability": 0.9987523555755615,
+        "entropy_nats": 0.009963693097233772
+      },
+      {
+        "token_index": 8,
+        "token_id": 1440,
+        "token_text": "ren",
+        "logprob": -10.250130653381348,
+        "probability": 3.535288124112412e-05,
+        "entropy_nats": 0.0015555196441709995
+      },
+      {
+        "token_index": 9,
+        "token_id": 18332,
+        "token_text": "owned",
+        "logprob": -8.606540359323844e-05,
+        "probability": 0.9999139308929443,
+        "entropy_nats": 0.000898671627510339
+      },
+      {
+        "token_index": 10,
+        "token_id": 6916,
+        "token_text": " writer",
+        "logprob": -5.006777428206988e-06,
+        "probability": 0.9999949932098389,
+        "entropy_nats": 6.689094880130142e-05
+      },
+      {
+        "token_index": 11,
+        "token_id": 220,
+        "token_text": " ",
+        "logprob": -3.534968137741089,
+        "probability": 0.029159685596823692,
+        "entropy_nats": 0.1712358593940735
+      },
+      {
+        "token_index": 12,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -2.3841855067985307e-07,
+        "probability": 0.9999997615814209,
+        "entropy_nats": 4.561706646200037e-06
+      },
+      {
+        "token_index": 13,
+        "token_id": 24,
+        "token_text": "9",
+        "logprob": -0.00026127262390218675,
+        "probability": 0.9997388124465942,
+        "entropy_nats": 0.00241653248667717
+      },
+      {
+        "token_index": 14,
+        "token_id": 339,
+        "token_text": "th",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 8.450162169992836e-08
+      },
+      {
+        "token_index": 15,
+        "token_id": 9294,
+        "token_text": " century",
+        "logprob": -5.8530047681415454e-05,
+        "probability": 0.9999414682388306,
+        "entropy_nats": 0.0006308009033091366
+      },
+      {
+        "token_index": 16,
+        "token_id": 28746,
+        "token_text": " editors",
+        "logprob": -6.506438255310059,
+        "probability": 0.0014937907690182328,
+        "entropy_nats": 0.0451638363301754
+      },
+      {
+        "token_index": 17,
+        "token_id": 12163,
+        "token_text": " lived",
+        "logprob": -6.029577255249023,
+        "probability": 0.0024065112229436636,
+        "entropy_nats": 0.16632910072803497
+      },
+      {
+        "token_index": 18,
+        "token_id": 3786,
+        "token_text": " together",
+        "logprob": -2.3841855067985307e-07,
+        "probability": 0.9999997615814209,
+        "entropy_nats": 3.1813387977308594e-06
+      },
+      {
+        "token_index": 19,
+        "token_id": 902,
+        "token_text": " no",
+        "logprob": -18.663166046142578,
+        "probability": 7.846752581031069e-09,
+        "entropy_nats": 0.31915801763534546
+      },
+      {
+        "token_index": 20,
+        "token_id": 825,
+        "token_text": " one",
+        "logprob": -8.75015926361084,
+        "probability": 0.0001584360870765522,
+        "entropy_nats": 0.0015617283061146736
+      },
+      {
+        "token_index": 21,
+        "token_id": 33286,
+        "token_text": " bored",
+        "logprob": -0.011092779226601124,
+        "probability": 0.988968551158905,
+        "entropy_nats": 0.061015840619802475
+      },
+      {
+        "token_index": 22,
+        "token_id": 304,
+        "token_text": " in",
+        "logprob": -7.161069393157959,
+        "probability": 0.0007762240129522979,
+        "entropy_nats": 0.4261142313480377
+      },
+      {
+        "token_index": 23,
+        "token_id": 2114,
+        "token_text": " home",
+        "logprob": -0.32270509004592896,
+        "probability": 0.7241873741149902,
+        "entropy_nats": 0.6313800811767578
+      },
+      {
+        "token_index": 24,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": -0.004527793265879154,
+        "probability": 0.9954823851585388,
+        "entropy_nats": 0.032965317368507385
+      },
+      {
+        "token_index": 25,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 6.269772256928263e-07
+      },
+      {
+        "token_index": 26,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.124741331182122e-07
+      },
+      {
+        "token_index": 27,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.3489223249507631e-07
+      },
+      {
+        "token_index": 28,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.6575102179672285e-08
+      },
+      {
+        "token_index": 29,
+        "token_id": 91017,
+        "token_text": "=top",
+        "logprob": -3.3378546504536644e-06,
+        "probability": 0.9999966621398926,
+        "entropy_nats": 4.791428000316955e-05
+      },
+      {
+        "token_index": 30,
+        "token_id": 74,
+        "token_text": "k",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 7.574279067444276e-14
+      },
+      {
+        "token_index": 31,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 3.930917813477208e-10
+      },
+      {
+        "token_index": 32,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -1.5020257706055418e-05,
+        "probability": 0.9999849796295166,
+        "entropy_nats": 0.00018314507906325161
+      },
+      {
+        "token_index": 33,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.7443453259602393e-07
+      },
+      {
+        "token_index": 34,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.3083174951397658e-12
+      },
+      {
+        "token_index": 35,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.8294571191290743e-07
+      },
+      {
+        "token_index": 36,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.7544431329952204e-07
+      },
+      {
+        "token_index": 37,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 6.67110420723982e-12
+      },
+      {
+        "token_index": 38,
+        "token_id": 1688,
+        "token_text": "function",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.0728873550979188e-07
+      },
+      {
+        "token_index": 39,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -8.750243186950684,
+        "probability": 0.00015842278662603348,
+        "entropy_nats": 0.002427216386422515
+      }
+    ]
+  },
+  {
+    "case": {
+      "question_index": 16,
+      "reference_answer": "Dead on Site",
+      "event_index": 2,
+      "event_type": "search",
+      "action": "2008 horror films production manager producer",
+      "coverage_before": 0.0,
+      "coverage_after": 1.0,
+      "first_observation_gold_event": 2
+    },
+    "meta": {
+      "prefix_tokens": 2710,
+      "target_tokens": 33,
+      "prefix_truncated": false,
+      "target_truncated": false,
+      "max_context_tokens": 24576,
+      "scoring": "teacher_forced historical decoded action under hf_global_step_100",
+      "entropy": "full vocabulary Shannon entropy from model logits (nats)"
+    },
+    "tokens": [
+      {
+        "token_index": 0,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 5.620884735435538e-07
+      },
+      {
+        "token_index": 1,
+        "token_id": 1688,
+        "token_text": "function",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 6.35316894204152e-07
+      },
+      {
+        "token_index": 2,
+        "token_id": 96598,
+        "token_text": "=search",
+        "logprob": -0.0020249830558896065,
+        "probability": 0.997977077960968,
+        "entropy_nats": 0.014961310662329197
+      },
+      {
+        "token_index": 3,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -1.0728830375228426e-06,
+        "probability": 0.999998927116394,
+        "entropy_nats": 1.578360388521105e-05
+      },
+      {
+        "token_index": 4,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.9999335520992645e-10
+      },
+      {
+        "token_index": 5,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 5.180979556484999e-08
+      },
+      {
+        "token_index": 6,
+        "token_id": 79194,
+        "token_text": "=query",
+        "logprob": -0.005237311124801636,
+        "probability": 0.9947764277458191,
+        "entropy_nats": 0.03268900141119957
+      },
+      {
+        "token_index": 7,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -0.022514795884490013,
+        "probability": 0.97773677110672,
+        "entropy_nats": 0.12106073647737503
+      },
+      {
+        "token_index": 8,
+        "token_id": 17,
+        "token_text": "2",
+        "logprob": -0.015165853314101696,
+        "probability": 0.9849486351013184,
+        "entropy_nats": 0.08254040777683258
+      },
+      {
+        "token_index": 9,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": -1.1920928244535389e-07,
+        "probability": 0.9999998807907104,
+        "entropy_nats": 1.2862158200732665e-06
+      },
+      {
+        "token_index": 10,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": -1.6689286894688848e-06,
+        "probability": 0.9999982714653015,
+        "entropy_nats": 2.4667555408086628e-05
+      },
+      {
+        "token_index": 11,
+        "token_id": 23,
+        "token_text": "8",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 7.360600307038112e-07
+      },
+      {
+        "token_index": 12,
+        "token_id": 21452,
+        "token_text": " horror",
+        "logprob": -1.6689286894688848e-06,
+        "probability": 0.9999982714653015,
+        "entropy_nats": 2.5384877517353743e-05
+      },
+      {
+        "token_index": 13,
+        "token_id": 12351,
+        "token_text": " films",
+        "logprob": -0.9355044960975647,
+        "probability": 0.39238783717155457,
+        "entropy_nats": 0.970051109790802
+      },
+      {
+        "token_index": 14,
+        "token_id": 5670,
+        "token_text": " production",
+        "logprob": -3.5367465019226074,
+        "probability": 0.029107876121997833,
+        "entropy_nats": 0.17511820793151855
+      },
+      {
+        "token_index": 15,
+        "token_id": 6645,
+        "token_text": " manager",
+        "logprob": -0.16022562980651855,
+        "probability": 0.851951539516449,
+        "entropy_nats": 0.41932839155197144
+      },
+      {
+        "token_index": 16,
+        "token_id": 16851,
+        "token_text": " producer",
+        "logprob": -3.541405200958252,
+        "probability": 0.02897258847951889,
+        "entropy_nats": 0.20880866050720215
+      },
+      {
+        "token_index": 17,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": -3.473264694213867,
+        "probability": 0.031015608459711075,
+        "entropy_nats": 1.031434416770935
+      },
+      {
+        "token_index": 18,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 4.969673739196878e-08
+      },
+      {
+        "token_index": 19,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 5.816301609229413e-07
+      },
+      {
+        "token_index": 20,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": -3.540453326422721e-05,
+        "probability": 0.9999645948410034,
+        "entropy_nats": 0.00039781330269761384
+      },
+      {
+        "token_index": 21,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 9.430199732207711e-09
+      },
+      {
+        "token_index": 22,
+        "token_id": 91017,
+        "token_text": "=top",
+        "logprob": -7.033323527139146e-06,
+        "probability": 0.9999930262565613,
+        "entropy_nats": 9.764764399733394e-05
+      },
+      {
+        "token_index": 23,
+        "token_id": 74,
+        "token_text": "k",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.048366081446428e-11
+      },
+      {
+        "token_index": 24,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -1.7165990357170813e-05,
+        "probability": 0.9999828338623047,
+        "entropy_nats": 0.00020838534692302346
+      },
+      {
+        "token_index": 25,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -0.030711084604263306,
+        "probability": 0.9697557091712952,
+        "entropy_nats": 0.14013215899467468
+      },
+      {
+        "token_index": 26,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": -0.0010621865512803197,
+        "probability": 0.9989383816719055,
+        "entropy_nats": 0.009084177203476429
+      },
+      {
+        "token_index": 27,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.0706283859462928e-07
+      },
+      {
+        "token_index": 28,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.195190518250456e-08
+      },
+      {
+        "token_index": 29,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -1.0728830375228426e-06,
+        "probability": 0.999998927116394,
+        "entropy_nats": 1.5818464817130007e-05
+      },
+      {
+        "token_index": 30,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": -2.3841855067985307e-07,
+        "probability": 0.9999997615814209,
+        "entropy_nats": 3.114451374131022e-06
+      },
+      {
+        "token_index": 31,
+        "token_id": 1688,
+        "token_text": "function",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.780611711410529e-07
+      },
+      {
+        "token_index": 32,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -0.0001102625101339072,
+        "probability": 0.9998897314071655,
+        "entropy_nats": 0.001183669432066381
+      }
+    ]
+  },
+  {
+    "case": {
+      "question_index": 23,
+      "reference_answer": "Tokyo",
+      "event_index": 3,
+      "event_type": "search",
+      "action": "2018 art project inspired by 1700s alchemist biblical scholar",
+      "coverage_before": 0.0,
+      "coverage_after": 1.0,
+      "first_observation_gold_event": 3
+    },
+    "meta": {
+      "prefix_tokens": 2349,
+      "target_tokens": 41,
+      "prefix_truncated": false,
+      "target_truncated": false,
+      "max_context_tokens": 24576,
+      "scoring": "teacher_forced historical decoded action under hf_global_step_100",
+      "entropy": "full vocabulary Shannon entropy from model logits (nats)"
+    },
+    "tokens": [
+      {
+        "token_index": 0,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": -1.0627403259277344,
+        "probability": 0.3455077111721039,
+        "entropy_nats": 0.701092541217804
+      },
+      {
+        "token_index": 1,
+        "token_id": 1688,
+        "token_text": "function",
+        "logprob": -0.0008228015503846109,
+        "probability": 0.9991775751113892,
+        "entropy_nats": 0.00748168770223856
+      },
+      {
+        "token_index": 2,
+        "token_id": 96598,
+        "token_text": "=search",
+        "logprob": -5.757259368896484,
+        "probability": 0.0031597595661878586,
+        "entropy_nats": 0.04795244708657265
+      },
+      {
+        "token_index": 3,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -2.9802276912960224e-06,
+        "probability": 0.999997079372406,
+        "entropy_nats": 4.255761450622231e-05
+      },
+      {
+        "token_index": 4,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 8.586814459476955e-08
+      },
+      {
+        "token_index": 5,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.033121037607998e-07
+      },
+      {
+        "token_index": 6,
+        "token_id": 79194,
+        "token_text": "=query",
+        "logprob": -3.576278118089249e-07,
+        "probability": 0.9999996423721313,
+        "entropy_nats": 6.224758635653416e-06
+      },
+      {
+        "token_index": 7,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -0.0007115454645827413,
+        "probability": 0.9992886781692505,
+        "entropy_nats": 0.006775727961212397
+      },
+      {
+        "token_index": 8,
+        "token_id": 17,
+        "token_text": "2",
+        "logprob": -0.14009399712085724,
+        "probability": 0.8692765831947327,
+        "entropy_nats": 0.6196614503860474
+      },
+      {
+        "token_index": 9,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": -7.152555099310121e-07,
+        "probability": 0.9999992847442627,
+        "entropy_nats": 1.2441484614100773e-05
+      },
+      {
+        "token_index": 10,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -0.00012396997772157192,
+        "probability": 0.9998760223388672,
+        "entropy_nats": 0.0012442574370652437
+      },
+      {
+        "token_index": 11,
+        "token_id": 23,
+        "token_text": "8",
+        "logprob": -4.768370445162873e-07,
+        "probability": 0.9999995231628418,
+        "entropy_nats": 7.027611900412012e-06
+      },
+      {
+        "token_index": 12,
+        "token_id": 1947,
+        "token_text": " art",
+        "logprob": -7.501279830932617,
+        "probability": 0.0005523769650608301,
+        "entropy_nats": 0.0113401273265481
+      },
+      {
+        "token_index": 13,
+        "token_id": 2390,
+        "token_text": " project",
+        "logprob": -1.311301275563892e-06,
+        "probability": 0.9999986886978149,
+        "entropy_nats": 2.2221196559257805e-05
+      },
+      {
+        "token_index": 14,
+        "token_id": 14606,
+        "token_text": " inspired",
+        "logprob": -0.005833149887621403,
+        "probability": 0.9941838383674622,
+        "entropy_nats": 0.040201336145401
+      },
+      {
+        "token_index": 15,
+        "token_id": 553,
+        "token_text": " by",
+        "logprob": -3.773475170135498,
+        "probability": 0.022972093895077705,
+        "entropy_nats": 0.11157947778701782
+      },
+      {
+        "token_index": 16,
+        "token_id": 220,
+        "token_text": " ",
+        "logprob": -0.00026174934464506805,
+        "probability": 0.9997382760047913,
+        "entropy_nats": 0.0026959325186908245
+      },
+      {
+        "token_index": 17,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -1.1920928244535389e-07,
+        "probability": 0.9999998807907104,
+        "entropy_nats": 1.962000624189386e-06
+      },
+      {
+        "token_index": 18,
+        "token_id": 22,
+        "token_text": "7",
+        "logprob": -1.1324817933200393e-05,
+        "probability": 0.9999887347221375,
+        "entropy_nats": 0.00014892766193952411
+      },
+      {
+        "token_index": 19,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": -9.727005090098828e-05,
+        "probability": 0.9999027848243713,
+        "entropy_nats": 0.0010066931135952473
+      },
+      {
+        "token_index": 20,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.6788844620085897e-12
+      },
+      {
+        "token_index": 21,
+        "token_id": 82,
+        "token_text": "s",
+        "logprob": -3.576278118089249e-07,
+        "probability": 0.9999996423721313,
+        "entropy_nats": 5.543275619857013e-06
+      },
+      {
+        "token_index": 22,
+        "token_id": 452,
+        "token_text": " al",
+        "logprob": -4.207999518257566e-05,
+        "probability": 0.9999579191207886,
+        "entropy_nats": 0.0005523046129383147
+      },
+      {
+        "token_index": 23,
+        "token_id": 74088,
+        "token_text": "chemist",
+        "logprob": -6.842378934379667e-05,
+        "probability": 0.9999316334724426,
+        "entropy_nats": 0.0007995147607289255
+      },
+      {
+        "token_index": 24,
+        "token_id": 52540,
+        "token_text": " biblical",
+        "logprob": -0.03990085422992706,
+        "probability": 0.9608847498893738,
+        "entropy_nats": 0.17636245489120483
+      },
+      {
+        "token_index": 25,
+        "token_id": 18145,
+        "token_text": " scholar",
+        "logprob": -0.00854620710015297,
+        "probability": 0.9914901852607727,
+        "entropy_nats": 0.055109988898038864
+      },
+      {
+        "token_index": 26,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": -0.001116010476835072,
+        "probability": 0.9988846778869629,
+        "entropy_nats": 0.010496732778847218
+      },
+      {
+        "token_index": 27,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 8.425111275300878e-08
+      },
+      {
+        "token_index": 28,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.2997379883472604e-07
+      },
+      {
+        "token_index": 29,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": -7.486063259420916e-05,
+        "probability": 0.9999251961708069,
+        "entropy_nats": 0.0007859034230932593
+      },
+      {
+        "token_index": 30,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.801185701173381e-07
+      },
+      {
+        "token_index": 31,
+        "token_id": 91017,
+        "token_text": "=top",
+        "logprob": -8.344646857949556e-07,
+        "probability": 0.9999991059303284,
+        "entropy_nats": 1.3292005860421341e-05
+      },
+      {
+        "token_index": 32,
+        "token_id": 74,
+        "token_text": "k",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.760590692672815e-13
+      },
+      {
+        "token_index": 33,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.3902941848064074e-09
+      },
+      {
+        "token_index": 34,
+        "token_id": 20,
+        "token_text": "5",
+        "logprob": -0.0011542332358658314,
+        "probability": 0.9988464713096619,
+        "entropy_nats": 0.00979539193212986
+      },
+      {
+        "token_index": 35,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.2439337887814048e-10
+      },
+      {
+        "token_index": 36,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.199755956804438e-07
+      },
+      {
+        "token_index": 37,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -2.3841855067985307e-07,
+        "probability": 0.9999997615814209,
+        "entropy_nats": 4.3604441088973545e-06
+      },
+      {
+        "token_index": 38,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.631095619154422e-10
+      },
+      {
+        "token_index": 39,
+        "token_id": 1688,
+        "token_text": "function",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 5.0425636999307244e-08
+      },
+      {
+        "token_index": 40,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -4.882681369781494,
+        "probability": 0.007576670963317156,
+        "entropy_nats": 0.04533729329705238
+      }
+    ]
+  },
+  {
+    "case": {
+      "question_index": 26,
+      "reference_answer": "Immofina",
+      "event_index": 2,
+      "event_type": "search",
+      "action": "entrepreneur born 1970-1990 founded company 1990-2010 convicted bribery 2023",
+      "coverage_before": 0.0,
+      "coverage_after": 1.0,
+      "first_observation_gold_event": 2
+    },
+    "meta": {
+      "prefix_tokens": 2349,
+      "target_tokens": 56,
+      "prefix_truncated": false,
+      "target_truncated": false,
+      "max_context_tokens": 24576,
+      "scoring": "teacher_forced historical decoded action under hf_global_step_100",
+      "entropy": "full vocabulary Shannon entropy from model logits (nats)"
+    },
+    "tokens": [
+      {
+        "token_index": 0,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 8.26305893042445e-07
+      },
+      {
+        "token_index": 1,
+        "token_id": 1688,
+        "token_text": "function",
+        "logprob": -3.576278118089249e-07,
+        "probability": 0.9999996423721313,
+        "entropy_nats": 5.741876066167606e-06
+      },
+      {
+        "token_index": 2,
+        "token_id": 96598,
+        "token_text": "=search",
+        "logprob": -0.053581394255161285,
+        "probability": 0.9478287696838379,
+        "entropy_nats": 0.22136610746383667
+      },
+      {
+        "token_index": 3,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -4.768360213347478e-06,
+        "probability": 0.999995231628418,
+        "entropy_nats": 6.412810034817085e-05
+      },
+      {
+        "token_index": 4,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 8.099819703843991e-10
+      },
+      {
+        "token_index": 5,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 7.66637242577417e-08
+      },
+      {
+        "token_index": 6,
+        "token_id": 79194,
+        "token_text": "=query",
+        "logprob": -0.008647258393466473,
+        "probability": 0.99139004945755,
+        "entropy_nats": 0.049744606018066406
+      },
+      {
+        "token_index": 7,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -0.013698969036340714,
+        "probability": 0.9863944053649902,
+        "entropy_nats": 0.08325423300266266
+      },
+      {
+        "token_index": 8,
+        "token_id": 39897,
+        "token_text": "entre",
+        "logprob": -7.932507514953613,
+        "probability": 0.0003588853869587183,
+        "entropy_nats": 0.9333120584487915
+      },
+      {
+        "token_index": 9,
+        "token_id": 55305,
+        "token_text": "preneur",
+        "logprob": -3.0485873222351074,
+        "probability": 0.047425877302885056,
+        "entropy_nats": 0.19086506962776184
+      },
+      {
+        "token_index": 10,
+        "token_id": 9223,
+        "token_text": " born",
+        "logprob": -0.0006009918288327754,
+        "probability": 0.9993991851806641,
+        "entropy_nats": 0.005497529171407223
+      },
+      {
+        "token_index": 11,
+        "token_id": 220,
+        "token_text": " ",
+        "logprob": -0.011048214510083199,
+        "probability": 0.989012598991394,
+        "entropy_nats": 0.06049773097038269
+      },
+      {
+        "token_index": 12,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -3.576278118089249e-07,
+        "probability": 0.9999996423721313,
+        "entropy_nats": 6.396630396920955e-06
+      },
+      {
+        "token_index": 13,
+        "token_id": 24,
+        "token_text": "9",
+        "logprob": -2.3841855067985307e-07,
+        "probability": 0.9999997615814209,
+        "entropy_nats": 4.219607490085764e-06
+      },
+      {
+        "token_index": 14,
+        "token_id": 22,
+        "token_text": "7",
+        "logprob": -0.002477792324498296,
+        "probability": 0.9975252747535706,
+        "entropy_nats": 0.017343349754810333
+      },
+      {
+        "token_index": 15,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": -1.1920928244535389e-07,
+        "probability": 0.9999998807907104,
+        "entropy_nats": 1.8249992308483343e-06
+      },
+      {
+        "token_index": 16,
+        "token_id": 12,
+        "token_text": "-",
+        "logprob": -0.00012051333033014089,
+        "probability": 0.9998794794082642,
+        "entropy_nats": 0.0012899269349873066
+      },
+      {
+        "token_index": 17,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 9.016799253913632e-07
+      },
+      {
+        "token_index": 18,
+        "token_id": 24,
+        "token_text": "9",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.0512184900335342e-07
+      },
+      {
+        "token_index": 19,
+        "token_id": 24,
+        "token_text": "9",
+        "logprob": -1.7881377516459906e-06,
+        "probability": 0.9999982118606567,
+        "entropy_nats": 2.565553404565435e-05
+      },
+      {
+        "token_index": 20,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.1076630279660549e-08
+      },
+      {
+        "token_index": 21,
+        "token_id": 18047,
+        "token_text": " founded",
+        "logprob": -0.03933575376868248,
+        "probability": 0.9614278078079224,
+        "entropy_nats": 0.16971345245838165
+      },
+      {
+        "token_index": 22,
+        "token_id": 2813,
+        "token_text": " company",
+        "logprob": -1.0728830375228426e-06,
+        "probability": 0.999998927116394,
+        "entropy_nats": 1.6369569493690506e-05
+      },
+      {
+        "token_index": 23,
+        "token_id": 220,
+        "token_text": " ",
+        "logprob": -0.0011711412807926536,
+        "probability": 0.9988295435905457,
+        "entropy_nats": 0.009078376926481724
+      },
+      {
+        "token_index": 24,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -3.6954811548639555e-06,
+        "probability": 0.9999963045120239,
+        "entropy_nats": 5.0379399908706546e-05
+      },
+      {
+        "token_index": 25,
+        "token_id": 24,
+        "token_text": "9",
+        "logprob": -1.1920928244535389e-07,
+        "probability": 0.9999998807907104,
+        "entropy_nats": 1.3297426448843908e-06
+      },
+      {
+        "token_index": 26,
+        "token_id": 24,
+        "token_text": "9",
+        "logprob": -2.3841855067985307e-07,
+        "probability": 0.9999997615814209,
+        "entropy_nats": 4.018275376438396e-06
+      },
+      {
+        "token_index": 27,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 5.225635035799314e-08
+      },
+      {
+        "token_index": 28,
+        "token_id": 12,
+        "token_text": "-",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.4483666205554755e-09
+      },
+      {
+        "token_index": 29,
+        "token_id": 17,
+        "token_text": "2",
+        "logprob": -2.3841855067985307e-07,
+        "probability": 0.9999997615814209,
+        "entropy_nats": 3.2823768378875684e-06
+      },
+      {
+        "token_index": 30,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.605698796147692e-09
+      },
+      {
+        "token_index": 31,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -1.7881377516459906e-06,
+        "probability": 0.9999982118606567,
+        "entropy_nats": 2.6917216018773615e-05
+      },
+      {
+        "token_index": 32,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 5.37832193003851e-07
+      },
+      {
+        "token_index": 33,
+        "token_id": 23088,
+        "token_text": " convicted",
+        "logprob": -3.58813522325363e-05,
+        "probability": 0.99996417760849,
+        "entropy_nats": 0.00043136562453582883
+      },
+      {
+        "token_index": 34,
+        "token_id": 92037,
+        "token_text": " bribery",
+        "logprob": -0.4761846661567688,
+        "probability": 0.6211487650871277,
+        "entropy_nats": 0.6793806552886963
+      },
+      {
+        "token_index": 35,
+        "token_id": 220,
+        "token_text": " ",
+        "logprob": -0.10023117065429688,
+        "probability": 0.9046282768249512,
+        "entropy_nats": 0.31503182649612427
+      },
+      {
+        "token_index": 36,
+        "token_id": 17,
+        "token_text": "2",
+        "logprob": -3.6954811548639555e-06,
+        "probability": 0.9999963045120239,
+        "entropy_nats": 5.036616130382754e-05
+      },
+      {
+        "token_index": 37,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 6.541728936326763e-08
+      },
+      {
+        "token_index": 38,
+        "token_id": 17,
+        "token_text": "2",
+        "logprob": -3.290122185717337e-05,
+        "probability": 0.9999671578407288,
+        "entropy_nats": 0.00038776814471930265
+      },
+      {
+        "token_index": 39,
+        "token_id": 18,
+        "token_text": "3",
+        "logprob": -6.437280717364047e-06,
+        "probability": 0.9999935626983643,
+        "entropy_nats": 8.352107397513464e-05
+      },
+      {
+        "token_index": 40,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": -2.5486152172088623,
+        "probability": 0.07818986475467682,
+        "entropy_nats": 0.8622584939002991
+      },
+      {
+        "token_index": 41,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.0674439110403e-08
+      },
+      {
+        "token_index": 42,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -3.3378546504536644e-06,
+        "probability": 0.9999966621398926,
+        "entropy_nats": 4.616387377609499e-05
+      },
+      {
+        "token_index": 43,
+        "token_id": 27,
+        "token_text": "<",
+        "logprob": -0.0019286142196506262,
+        "probability": 0.9980732202529907,
+        "entropy_nats": 0.013971500098705292
+      },
+      {
+        "token_index": 44,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.0978895065582037e-08
+      },
+      {
+        "token_index": 45,
+        "token_id": 91017,
+        "token_text": "=top",
+        "logprob": -0.0004468158003874123,
+        "probability": 0.9995532631874084,
+        "entropy_nats": 0.003977640997618437
+      },
+      {
+        "token_index": 46,
+        "token_id": 74,
+        "token_text": "k",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 9.083348656568901e-11
+      },
+      {
+        "token_index": 47,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -2.7418097943154862e-06,
+        "probability": 0.9999973177909851,
+        "entropy_nats": 3.968210148741491e-05
+      },
+      {
+        "token_index": 48,
+        "token_id": 16,
+        "token_text": "1",
+        "logprob": -0.08119089901447296,
+        "probability": 0.9220176339149475,
+        "entropy_nats": 0.28546029329299927
+      },
+      {
+        "token_index": 49,
+        "token_id": 15,
+        "token_text": "0",
+        "logprob": -0.04306454211473465,
+        "probability": 0.9578495621681213,
+        "entropy_nats": 0.1752205491065979
+      },
+      {
+        "token_index": 50,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 1.0681586815053379e-07
+      },
+      {
+        "token_index": 51,
+        "token_id": 16181,
+        "token_text": "parameter",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.5829077543448875e-08
+      },
+      {
+        "token_index": 52,
+        "token_id": 397,
+        "token_text": ">\n",
+        "logprob": -1.8954096958623268e-05,
+        "probability": 0.9999810457229614,
+        "entropy_nats": 0.00022568562417291105
+      },
+      {
+        "token_index": 53,
+        "token_id": 522,
+        "token_text": "</",
+        "logprob": -5.960462772236497e-07,
+        "probability": 0.9999993443489075,
+        "entropy_nats": 9.824692824622616e-06
+      },
+      {
+        "token_index": 54,
+        "token_id": 1688,
+        "token_text": "function",
+        "logprob": 0.0,
+        "probability": 1.0,
+        "entropy_nats": 2.365528217751489e-08
+      },
+      {
+        "token_index": 55,
+        "token_id": 29,
+        "token_text": ">",
+        "logprob": -0.0021893836092203856,
+        "probability": 0.9978129863739014,
+        "entropy_nats": 0.016379080712795258
+      }
+    ]
+  }
+]

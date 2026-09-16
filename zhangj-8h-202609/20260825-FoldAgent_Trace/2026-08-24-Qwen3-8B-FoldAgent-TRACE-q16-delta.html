@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>q16 base 对、step-100 错：逐 action coverage/delta</title>
+<style>
+body{margin:0;background:#f7f8fa;color:#202124;font:14px/1.55 Arial,"Noto Sans CJK SC",sans-serif}header,main{max-width:1360px;margin:auto;padding:24px 20px}header{background:#202124;color:#fff;max-width:none;padding-left:max(20px,calc((100vw - 1360px)/2));padding-right:max(20px,calc((100vw - 1360px)/2))}h1{margin:0 0 6px;font-size:26px}h2{border-bottom:2px solid #d7d9dc;padding-bottom:7px;margin-top:28px}.callout{background:#fff4e5;border-left:4px solid #b47718;padding:12px 14px;margin:14px 0}.panel{background:#fff;border:1px solid #d7d9dc;padding:14px;overflow:auto}table{border-collapse:collapse;width:100%;min-width:1120px}th,td{border:1px solid #d7d9dc;padding:8px;vertical-align:top;text-align:left}th{background:#eef0f2;position:sticky;top:0}code{font-family:ui-monospace,monospace}.ok{color:#087f5b;font-weight:bold}.bad{color:#c92a2a;font-weight:bold}.muted{color:#5f6368;font-size:12px}.chart{width:100%;max-width:1120px;border:1px solid #d7d9dc;background:#fff}.src{font-size:12px;color:#5f6368;margin-top:16px}@media(max-width:760px){header,main{padding:16px 12px}h1{font-size:21px}}
+</style>
+</head>
+<body>
+<header><h1>q16：未训练模型答对，step-100 训练模型答错</h1><div>gold = Dead on Site；base rollout 249 = strict 正确；step-100 = The Wailing，strict 错误。</div></header>
+<main>
+<nav class="nav"><a href="index.html">报告首页</a><button type="button" onclick="history.back()">返回上一页</button><button type="button" onclick="window.scrollTo({top:0,behavior:'smooth'})">回到顶端</button></nav>
+<div class="callout"><b>核心故障：</b>step-100 的 search observation 在 k=2 已出现正确标题 <code>Dead on Site</code>，累计词面 coverage 达 1.00；但后续没有核验 2008 年约束，auxiliary branch 最终选择 2016 年的 <code>The Wailing</code>。k=5 的被动 main fold 使可见 coverage 降至 0.50。</div>
+<h2>逐 action 事件</h2>
+<section class="panel"><table><thead><tr><th>k</th><th>category</th><th>action</th><th>关键 observation</th><th>local gold / hit</th><th>累计 coverage</th><th>V</th><th>delta</th><th>flags</th></tr></thead><tbody>
+<tr><td>0</td><td>initial</td><td>Question only; no decoded tool evidence yet.</td><td>空</td><td>-- / 0.00</td><td>0.00</td><td>0.0000</td><td>--</td><td></td></tr>
+<tr><td>1</td><td>branch</td><td>Identify 2008 horror films with production manager/producer also as a 1930s theatre house manager</td><td>assistant think 为空</td><td>-- / 0.00</td><td>0.00</td><td>0.0000</td><td>0.0000</td><td></td></tr>
+<tr><td>2</td><td>search</td><td><code>2008 horror films production manager producer</code></td><td>Search result docid 69672 中出现 <b>Dead on Site</b></td><td><code>dead, site</code> / <b>1.00</b></td><td class="ok">1.00</td><td>2.3026</td><td class="ok">+2.3026</td><td></td></tr>
+<tr><td>3</td><td>search</td><td><code>house managers of 1930s theatres</code></td><td>2017 theatre history result；新增 <code>site</code></td><td><code>site</code> / 0.50</td><td>1.00</td><td>2.3026</td><td>0.0000</td><td></td></tr>
+<tr><td>4</td><td>search</td><td><code>house manager 1930s theatre film role</code></td><td>Ronald Reagan filmography result；新增 <code>site</code></td><td><code>site</code> / 0.50</td><td>1.00</td><td>2.3026</td><td>0.0000</td><td></td></tr>
+<tr><td>5</td><td>main_context_fold</td><td>Harness triggered summary handover after the active context reached its budget.</td><td>摘要中保留 <code>dead</code>，完整标题和约束关系不可见</td><td><code>dead</code> / 0.50</td><td class="bad">0.50</td><td>0.6931</td><td class="bad">-1.6094</td><td>main_fold</td></tr>
+</tbody></table></section>
+<h2>Coverage 与 Eq.(7) delta</h2>
+<svg class="chart" viewBox="0 0 1120 360" role="img" aria-label="q16 cumulative lexical coverage and delta">
+<rect width="1120" height="360" fill="#fff"/><style>text{font-family:Arial,"Noto Sans CJK SC",sans-serif;fill:#202124}.grid{stroke:#e5e7e9}.axis{stroke:#777}</style>
+<text x="20" y="22" font-size="16" font-weight="bold">q16：累计词面 coverage（折线）与 Eq.(7) delta（下方柱）</text>
+<line class="grid" x1="70" y1="55" x2="1080" y2="55"/><line class="grid" x1="70" y1="130" x2="1080" y2="130"/><line class="grid" x1="70" y1="205" x2="1080" y2="205"/><text x="60" y="59" text-anchor="end" font-size="11">1.0</text><text x="60" y="134" text-anchor="end" font-size="11">0.5</text><text x="60" y="209" text-anchor="end" font-size="11">0.0</text>
+<polyline points="70,205 272,205 474,55 676,55 878,55 1080,130" fill="none" stroke="#167c80" stroke-width="4"/>
+<circle cx="70" cy="205" r="5" fill="#167c80"/><circle cx="272" cy="205" r="5" fill="#167c80"/><circle cx="474" cy="55" r="5" fill="#167c80"/><circle cx="676" cy="55" r="5" fill="#167c80"/><circle cx="878" cy="55" r="5" fill="#167c80"/><circle cx="1080" cy="130" r="5" fill="#c92a2a"/>
+<line class="axis" x1="70" y1="260" x2="1080" y2="260"/><line class="axis" x1="70" y1="320" x2="1080" y2="320"/>
+<rect x="252" y="257" width="40" height="3" fill="#b47718"/><rect x="454" y="200" width="40" height="60" fill="#087f5b"/><rect x="656" y="257" width="40" height="3" fill="#b47718"/><rect x="858" y="257" width="40" height="3" fill="#b47718"/><rect x="1060" y="302" width="40" height="18" fill="#c92a2a"/>
+<text x="70" y="282" font-size="11">delta</text><text x="474" y="194" text-anchor="middle" font-size="11">+2.3026</text><text x="1080" y="337" text-anchor="middle" font-size="11">-1.6094</text>
+<g font-size="11"><text x="70" y="278" text-anchor="middle">k0</text><text x="272" y="278" text-anchor="middle">k1</text><text x="474" y="278" text-anchor="middle">k2</text><text x="676" y="278" text-anchor="middle">k3</text><text x="878" y="278" text-anchor="middle">k4</text><text x="1080" y="278" text-anchor="middle">k5 fold</text></g>
+<text x="70" y="350" font-size="11">折线：active_coverage；金色/绿色/红色柱：delta（0 / 正提升 / 负下降）；k5 的下降来自 Harness 主上下文 fold，不是模型显式调用 fold。</text>
+</svg>
+<h2>约束核验结论</h2>
+<p>k=2 的正确标题只是检索 observation 中的词面命中；k=3、k=4 没有新增决定性证据，仍围绕 theatre/film 泛查询。fold 后摘要保留了部分 <code>dead</code>，但没有可靠保留“2008 年 + Alice 角色 + production manager/producer + house manager”的联合关系。最终 branch 选择 <code>The Wailing</code>，并且解释中承认它是 2016 年电影，直接违反题目年份约束。</p>
+<p class="muted">定义：<code>active_coverage</code> 是当前可见 decoded 上下文覆盖 gold 内容词的比例；<code>V</code> 与 <code>delta</code> 只是在 coverage proxy 上重现 Eq.(7) 的代数，不是 TRACE frozen-reference likelihood 或训练 reward。</p>
+<p class="src">完整 v2 诊断（含 29 个 case 的逐 action、observation、category、coverage、V、delta 和其他 SVG）位于：<a href="trajectory_report_step100_diagnostics_zh_v2/diagnostics.html">trajectory_report_step100_diagnostics_zh_v2/diagnostics.html</a></p>
+</main>
+</body>
+</html>

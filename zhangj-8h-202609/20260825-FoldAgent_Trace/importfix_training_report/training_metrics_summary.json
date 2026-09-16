@@ -1,0 +1,557 @@
+{
+  "runs": {
+    "importfix_step1_300": {
+      "records": 300,
+      "first_step": 1,
+      "last_step": 300,
+      "metrics": {
+        "actor/entropy": {
+          "count": 300,
+          "mean": 0.19916203906138738,
+          "std": 0.06492418603014238,
+          "min": 0.09292656928300858,
+          "max": 0.3430296778678894,
+          "first": 0.1261558085680008,
+          "last": 0.28050604462623596
+        },
+        "actor/grad_norm": {
+          "count": 300,
+          "mean": 1.9705728701636906,
+          "std": 0.8158316365434547,
+          "min": 0.09441266741071429,
+          "max": 5.1171875,
+          "first": 2.1346028645833335,
+          "last": 1.0619419642857142
+        },
+        "actor/pg_clipfrac": {
+          "count": 300,
+          "mean": 0.0011275434509524956,
+          "std": 0.00029745053118223307,
+          "min": 0.000547186388909419,
+          "max": 0.0022130866166359437,
+          "first": 0.0015552810693320463,
+          "last": 0.001364513926741243
+        },
+        "actor/pg_clipfrac_lower": {
+          "count": 300,
+          "mean": 1.7322255692190652e-06,
+          "std": 8.121583913940787e-06,
+          "min": 0.0,
+          "max": 9.110786985339863e-05,
+          "first": 0.0,
+          "last": 0.0
+        },
+        "actor/pg_loss": {
+          "count": 300,
+          "mean": 0.0017778296038958863,
+          "std": 0.006980860244093836,
+          "min": -0.02241341600760139,
+          "max": 0.021796627830445642,
+          "first": 0.005053907580336922,
+          "last": -0.003812645853453692
+        },
+        "actor/ppo_kl": {
+          "count": 300,
+          "mean": -3.445312873345514e-05,
+          "std": 0.00018390108754105298,
+          "min": -0.0010540921861866082,
+          "max": 0.0004944747881583882,
+          "first": 1.9703278948803754e-05,
+          "last": -0.00017964756546210277
+        },
+        "actor/total_loss": {
+          "count": 300,
+          "mean": 0.0012682826472849356,
+          "std": 0.006577227832998065,
+          "min": -0.02201808878415844,
+          "max": 0.01986552936017731,
+          "first": 0.0044087833206980405,
+          "last": -0.004137484698475191
+        },
+        "actor/trace_credit_nonzero": {
+          "count": 300,
+          "mean": 872.2432571123287,
+          "std": 92.87563530844439,
+          "min": 623.7592592592592,
+          "max": 1231.4761904761904,
+          "first": 779.6547619047619,
+          "last": 1071.580357142857
+        },
+        "actor/trace_loss": {
+          "count": 300,
+          "mean": -0.0005095469566109508,
+          "std": 0.0005282809795274228,
+          "min": -0.0019676819610594974,
+          "max": 0.0013036787414828148,
+          "first": -0.0006451242596388814,
+          "last": -0.0003248388450214991
+        },
+        "critic/advantages/max": {
+          "count": 300,
+          "mean": 1.6798076850300034,
+          "std": 0.5589266410868715,
+          "min": 0.026019543409347534,
+          "max": 2.21081805229187,
+          "first": 1.9535539150238037,
+          "last": 1.1436753273010254
+        },
+        "critic/advantages/mean": {
+          "count": 300,
+          "mean": 0.042901040994232365,
+          "std": 0.1799632323290501,
+          "min": -0.23252177238464355,
+          "max": 0.6876683831214905,
+          "first": -0.02441749908030033,
+          "last": 0.057035043835639954
+        },
+        "critic/advantages/min": {
+          "count": 300,
+          "mean": -1.3457638632009428,
+          "std": 0.5908567710284548,
+          "min": -2.129061698913574,
+          "max": -0.06464991718530655,
+          "first": -0.759659469127655,
+          "last": -1.1691370010375977
+        },
+        "critic/returns/max": {
+          "count": 300,
+          "mean": 1.2704676057895024,
+          "std": 0.4211051217985922,
+          "min": 0.0,
+          "max": 1.4999970197677612,
+          "first": 1.4999970197677612,
+          "last": 0.8660238981246948
+        },
+        "critic/returns/mean": {
+          "count": 300,
+          "mean": 0.053742388195193294,
+          "std": 0.17548371421774733,
+          "min": -0.19906850159168243,
+          "max": 0.6814238429069519,
+          "first": -0.014252553693950176,
+          "last": 0.058224644511938095
+        },
+        "critic/returns/min": {
+          "count": 300,
+          "mean": -0.9778122812509537,
+          "std": 0.4513586752155157,
+          "min": -1.4999970197677612,
+          "max": 0.0,
+          "first": -0.4999989867210388,
+          "last": -0.8660238981246948
+        },
+        "critic/rewards/max": {
+          "count": 300,
+          "mean": 0.95,
+          "std": 0.21830909938949905,
+          "min": 0.0,
+          "max": 1.0,
+          "first": 1.0,
+          "last": 1.0
+        },
+        "critic/rewards/mean": {
+          "count": 300,
+          "mean": 0.23370319103201231,
+          "std": 0.15116172294740454,
+          "min": 0.0,
+          "max": 0.720588207244873,
+          "first": 0.1111111119389534,
+          "last": 0.1339285671710968
+        },
+        "critic/rewards/min": {
+          "count": 300,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "first": 0.0,
+          "last": 0.0
+        },
+        "critic/score/max": {
+          "count": 300,
+          "mean": 0.95,
+          "std": 0.21830909938949905,
+          "min": 0.0,
+          "max": 1.0,
+          "first": 1.0,
+          "last": 1.0
+        },
+        "critic/score/mean": {
+          "count": 300,
+          "mean": 0.23370319103201231,
+          "std": 0.15116172294740454,
+          "min": 0.0,
+          "max": 0.720588207244873,
+          "first": 0.1111111119389534,
+          "last": 0.1339285671710968
+        },
+        "critic/score/min": {
+          "count": 300,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "first": 0.0,
+          "last": 0.0
+        },
+        "num_turns/mean": {
+          "count": 300,
+          "mean": 12.36429026953878,
+          "std": 1.0369934110845163,
+          "min": 9.825,
+          "max": 15.96774193548387,
+          "first": 11.976190476190476,
+          "last": 12.866071428571429
+        },
+        "perf/mfu/actor": {
+          "count": 300,
+          "mean": 0.495562602670217,
+          "std": 0.01733842832084175,
+          "min": 0.43434973737628213,
+          "max": 0.5386207531498217,
+          "first": 0.48302057821740746,
+          "last": 0.49047316273317276
+        },
+        "perf/throughput": {
+          "count": 300,
+          "mean": 443.89696882028824,
+          "std": 33.237509565818556,
+          "min": 316.7286822041954,
+          "max": 526.4594676266478,
+          "first": 457.7379262670076,
+          "last": 401.152209375561
+        },
+        "response/aborted_ratio": {
+          "count": 300,
+          "mean": 0.015824610178048412,
+          "std": 0.012367914685472128,
+          "min": 0.0,
+          "max": 0.04411764815449715,
+          "first": 0.0357142873108387,
+          "last": 0.0
+        },
+        "response_length/clip_ratio": {
+          "count": 300,
+          "mean": 0.0052279607874030866,
+          "std": 0.007924383125593206,
+          "min": 0.0,
+          "max": 0.03999999910593033,
+          "first": 0.0,
+          "last": 0.008928571827709675
+        },
+        "response_length/mean": {
+          "count": 300,
+          "mean": 7991.910367838542,
+          "std": 1338.9900770257775,
+          "min": 4603.75830078125,
+          "max": 12362.9443359375,
+          "first": 7384.9287109375,
+          "last": 7435.83935546875
+        },
+        "reward/avg_num_turns": {
+          "count": 300,
+          "mean": 71.41708333333334,
+          "std": 13.99938035512574,
+          "min": 35.75,
+          "max": 122.8125,
+          "first": 60.4375,
+          "last": 90.0625
+        },
+        "reward/avg_score": {
+          "count": 300,
+          "mean": 0.24104166666666665,
+          "std": 0.1407712063563389,
+          "min": 0.0,
+          "max": 0.6875,
+          "first": 0.125,
+          "last": 0.125
+        },
+        "reward/avg_trajs_per_gen_uid": {
+          "count": 300,
+          "mean": 5.705416666666666,
+          "std": 0.8690624112442564,
+          "min": 3.4375,
+          "max": 8.375,
+          "first": 5.0625,
+          "last": 7.0
+        },
+        "reward/max_score": {
+          "count": 300,
+          "mean": 0.95,
+          "std": 0.21830909938949905,
+          "min": 0.0,
+          "max": 1.0,
+          "first": 1.0,
+          "last": 1.0
+        },
+        "reward/min_score": {
+          "count": 300,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "first": 0.0,
+          "last": 0.0
+        },
+        "reward/num_unique_gen_uids": {
+          "count": 300,
+          "mean": 16.0,
+          "std": 0.0,
+          "min": 16.0,
+          "max": 16.0,
+          "first": 16.0,
+          "last": 16.0
+        },
+        "reward/overlong_rate": {
+          "count": 300,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "first": 0.0,
+          "last": 0.0
+        },
+        "reward/reward_score": {
+          "count": 300,
+          "mean": 0.2300313586859332,
+          "std": 0.14885478489614226,
+          "min": 0.0,
+          "max": 0.7205882352941176,
+          "first": 0.10714285714285714,
+          "last": 0.13392857142857142
+        },
+        "reward/std_score": {
+          "count": 300,
+          "mean": 0.3987819785153479,
+          "std": 0.12285229754684067,
+          "min": 0.0,
+          "max": 0.5163977794943222,
+          "first": 0.3415650255319866,
+          "last": 0.3415650255319866
+        },
+        "rollout_corr/k3_kl": {
+          "count": 300,
+          "mean": 0.3393043576848015,
+          "std": 1.9061182791841027,
+          "min": 0.0008246701870302786,
+          "max": 27.157322708387557,
+          "first": 0.41322195823020247,
+          "last": 0.0009795105524809905
+        },
+        "rollout_corr/kl": {
+          "count": 300,
+          "mean": 0.0005909436875580319,
+          "std": 0.0005221850151428723,
+          "min": -0.001977493229701178,
+          "max": 0.0018040362627402828,
+          "first": -0.00015062365647671477,
+          "last": 0.0008774103605954256
+        },
+        "timing_s/adv": {
+          "count": 300,
+          "mean": 607.3428733778745,
+          "std": 146.11677603849668,
+          "min": 354.627733245492,
+          "max": 1226.06473030895,
+          "first": 484.90332374721766,
+          "last": 803.2695546448231
+        },
+        "timing_s/gen": {
+          "count": 300,
+          "mean": 312.18128256559373,
+          "std": 62.50595396331259,
+          "min": 165.30706737190485,
+          "max": 524.1983826979995,
+          "first": 242.4344471693039,
+          "last": 430.6538651511073
+        },
+        "timing_s/step": {
+          "count": 300,
+          "mean": 1351.763835180526,
+          "std": 259.2460364092266,
+          "min": 823.6887532025576,
+          "max": 2332.6678736656904,
+          "first": 1118.5122984573245,
+          "last": 1732.472073584795
+        },
+        "timing_s/update_actor": {
+          "count": 300,
+          "mean": 347.111644819354,
+          "std": 56.65268811824844,
+          "min": 225.33770898729563,
+          "max": 543.8281001970172,
+          "first": 312.0971027761698,
+          "last": 400.4966375529766
+        },
+        "trace/credit_abs_mean": {
+          "count": 300,
+          "mean": 0.010309890722079823,
+          "std": 0.004244462592567926,
+          "min": 0.0019816511776298285,
+          "max": 0.02287568710744381,
+          "first": 0.00884687714278698,
+          "last": 0.006255739368498325
+        },
+        "trace/credit_nonzero": {
+          "count": 300,
+          "mean": 80414.5,
+          "std": 12229.903671303571,
+          "min": 48340,
+          "max": 121463,
+          "first": 65491,
+          "last": 120017
+        },
+        "trace/reference_online": {
+          "count": 300,
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "first": 1.0,
+          "last": 1.0
+        },
+        "training/rollout_probs_diff_mean": {
+          "count": 300,
+          "mean": 0.007725560822679351,
+          "std": 0.0030777229543605673,
+          "min": 0.0037561177741736174,
+          "max": 0.024939965456724167,
+          "first": 0.015103225596249104,
+          "last": 0.004677013028413057
+        },
+        "val/avg_score": {
+          "count": 6,
+          "mean": 0.28777777777777774,
+          "std": 0.03757461712182643,
+          "min": 0.23333333333333334,
+          "max": 0.3466666666666667,
+          "first": 0.30666666666666664,
+          "last": 0.3466666666666667
+        },
+        "val/max_score": {
+          "count": 6,
+          "mean": 1.0,
+          "std": 0.0,
+          "min": 1.0,
+          "max": 1.0,
+          "first": 1.0,
+          "last": 1.0
+        },
+        "val/min_score": {
+          "count": 6,
+          "mean": 0.0,
+          "std": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "first": 0.0,
+          "last": 0.0
+        },
+        "val/reward": {
+          "count": 6,
+          "mean": 0.2544556084266125,
+          "std": 0.04096586470823798,
+          "min": 0.2065081351689612,
+          "max": 0.31585845347313235,
+          "first": 0.2515188335358445,
+          "last": 0.31585845347313235
+        },
+        "val/reward_score": {
+          "count": 6,
+          "mean": 0.2544556084266125,
+          "std": 0.04096586470823798,
+          "min": 0.2065081351689612,
+          "max": 0.31585845347313235,
+          "first": 0.2515188335358445,
+          "last": 0.31585845347313235
+        },
+        "val/std_score": {
+          "count": 6,
+          "mean": 0.452652153551919,
+          "std": 0.017626078745101786,
+          "min": 0.42436951523243627,
+          "max": 0.47750282569411173,
+          "first": 0.46265453310460186,
+          "last": 0.47750282569411173
+        }
+      }
+    }
+  },
+  "groups": {
+    "actor_loss": [
+      "actor/pg_loss",
+      "actor/trace_loss",
+      "actor/total_loss"
+    ],
+    "optimization_stability": [
+      "actor/grad_norm",
+      "actor/ppo_kl",
+      "actor/pg_clipfrac",
+      "actor/pg_clipfrac_lower",
+      "actor/entropy",
+      "rollout_corr/kl",
+      "rollout_corr/k3_kl",
+      "training/rollout_probs_diff_mean"
+    ],
+    "critic_signals": [
+      "critic/advantages/mean",
+      "critic/returns/mean",
+      "critic/score/mean",
+      "critic/rewards/mean"
+    ],
+    "reward_train": [
+      "reward/avg_score",
+      "reward/reward_score",
+      "reward/std_score",
+      "reward/min_score",
+      "reward/max_score",
+      "reward/avg_trajs_per_gen_uid",
+      "reward/num_unique_gen_uids"
+    ],
+    "reward_critic": [
+      "critic/score/mean",
+      "critic/score/min",
+      "critic/score/max",
+      "critic/rewards/mean",
+      "critic/rewards/min",
+      "critic/rewards/max"
+    ],
+    "reward_rl_signals": [
+      "critic/advantages/mean",
+      "critic/advantages/min",
+      "critic/advantages/max",
+      "critic/returns/mean",
+      "critic/returns/min",
+      "critic/returns/max"
+    ],
+    "reward_validation": [
+      "val/reward",
+      "val/reward_score",
+      "val/avg_score",
+      "val/std_score",
+      "val/min_score",
+      "val/max_score"
+    ],
+    "trace": [
+      "trace/credit_nonzero",
+      "trace/credit_abs_mean",
+      "actor/trace_credit_nonzero",
+      "trace/reference_online"
+    ],
+    "behavior": [
+      "response_length/mean",
+      "response_length/clip_ratio",
+      "response/aborted_ratio",
+      "num_turns/mean",
+      "reward/avg_num_turns",
+      "reward/overlong_rate"
+    ],
+    "efficiency": [
+      "timing_s/step",
+      "timing_s/gen",
+      "timing_s/adv",
+      "timing_s/update_actor",
+      "perf/throughput",
+      "perf/mfu/actor"
+    ]
+  }
+}

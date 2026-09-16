@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2200" height="1250" viewBox="0 0 2200 1250">
+<rect width="100%" height="100%" fill="white"/>
+<text x="230" y="50" font-family="Arial" font-size="38" font-weight="bold">importfix_step1_300_reward_validation</text>
+<line x1="230" y1="90.00" x2="2120" y2="90.00" stroke="#e5e7eb" stroke-width="2"/>
+<text x="206" y="98.00" text-anchor="end" font-family="Arial" font-size="25" fill="#374151">1.06</text>
+<line x1="230" y1="256.00" x2="2120" y2="256.00" stroke="#e5e7eb" stroke-width="2"/>
+<text x="206" y="264.00" text-anchor="end" font-family="Arial" font-size="25" fill="#374151">0.836</text>
+<line x1="230" y1="422.00" x2="2120" y2="422.00" stroke="#e5e7eb" stroke-width="2"/>
+<text x="206" y="430.00" text-anchor="end" font-family="Arial" font-size="25" fill="#374151">0.612</text>
+<line x1="230" y1="588.00" x2="2120" y2="588.00" stroke="#e5e7eb" stroke-width="2"/>
+<text x="206" y="596.00" text-anchor="end" font-family="Arial" font-size="25" fill="#374151">0.388</text>
+<line x1="230" y1="754.00" x2="2120" y2="754.00" stroke="#e5e7eb" stroke-width="2"/>
+<text x="206" y="762.00" text-anchor="end" font-family="Arial" font-size="25" fill="#374151">0.164</text>
+<line x1="230" y1="920.00" x2="2120" y2="920.00" stroke="#e5e7eb" stroke-width="2"/>
+<text x="206" y="928.00" text-anchor="end" font-family="Arial" font-size="25" fill="#374151">-0.06</text>
+<text x="-148.00" y="965" text-anchor="middle" font-family="Arial" font-size="26" fill="#374151">0</text>
+<text x="230.00" y="965" text-anchor="middle" font-family="Arial" font-size="26" fill="#374151">50</text>
+<text x="608.00" y="965" text-anchor="middle" font-family="Arial" font-size="26" fill="#374151">100</text>
+<text x="986.00" y="965" text-anchor="middle" font-family="Arial" font-size="26" fill="#374151">150</text>
+<text x="1364.00" y="965" text-anchor="middle" font-family="Arial" font-size="26" fill="#374151">200</text>
+<text x="1742.00" y="965" text-anchor="middle" font-family="Arial" font-size="26" fill="#374151">250</text>
+<text x="2120.00" y="965" text-anchor="middle" font-family="Arial" font-size="26" fill="#374151">300</text>
+<line x1="230" y1="90" x2="230" y2="920" stroke="#111827" stroke-width="3"/>
+<line x1="230" y1="920" x2="2120" y2="920" stroke="#111827" stroke-width="3"/>
+<text x="1175.0" y="1025" text-anchor="middle" font-family="Arial" font-size="32" font-weight="bold">Training Step</text>
+<text x="42" y="505.0" text-anchor="middle" transform="rotate(-90 42 505.0)" font-family="Arial" font-size="32" font-weight="bold">Metric Value</text>
+<line x1="230" y1="1075" x2="2120" y2="1075" stroke="#d1d5db" stroke-width="2"/>
+<polyline points="230.00,689.14 608.00,672.91 986.00,718.31 1364.00,677.47 1742.00,722.50 2120.00,641.46" fill="none" stroke="#2563eb" stroke-width="4"/>
+<line x1="230" y1="1125" x2="266" y2="1125" stroke="#2563eb" stroke-width="6"/>
+<text x="282" y="1134" font-family="Arial" font-size="25">val/reward</text>
+<polyline points="230.00,689.14 608.00,672.91 986.00,718.31 1364.00,677.47 1742.00,722.50 2120.00,641.46" fill="none" stroke="#dc2626" stroke-width="4"/>
+<line x1="880" y1="1125" x2="916" y2="1125" stroke="#dc2626" stroke-width="6"/>
+<text x="932" y="1134" font-family="Arial" font-size="25">val/reward_score</text>
+<polyline points="230.00,648.27 608.00,663.10 986.00,672.98 1364.00,668.04 1742.00,702.62 2120.00,618.63" fill="none" stroke="#059669" stroke-width="4"/>
+<line x1="1530" y1="1125" x2="1566" y2="1125" stroke="#059669" stroke-width="6"/>
+<text x="1582" y="1134" font-family="Arial" font-size="25">val/avg_score</text>
+<polyline points="230.00,532.68 608.00,539.30 986.00,544.16 1364.00,541.68 1742.00,561.05 2120.00,521.67" fill="none" stroke="#9333ea" stroke-width="4"/>
+<line x1="230" y1="1167" x2="266" y2="1167" stroke="#9333ea" stroke-width="6"/>
+<text x="282" y="1176" font-family="Arial" font-size="25">val/std_score</text>
+<polyline points="230.00,875.54 608.00,875.54 986.00,875.54 1364.00,875.54 1742.00,875.54 2120.00,875.54" fill="none" stroke="#ea580c" stroke-width="4"/>
+<line x1="880" y1="1167" x2="916" y2="1167" stroke="#ea580c" stroke-width="6"/>
+<text x="932" y="1176" font-family="Arial" font-size="25">val/min_score</text>
+<polyline points="230.00,134.46 608.00,134.46 986.00,134.46 1364.00,134.46 1742.00,134.46 2120.00,134.46" fill="none" stroke="#0891b2" stroke-width="4"/>
+<line x1="1530" y1="1167" x2="1566" y2="1167" stroke="#0891b2" stroke-width="6"/>
+<text x="1582" y="1176" font-family="Arial" font-size="25">val/max_score</text>
+</svg>

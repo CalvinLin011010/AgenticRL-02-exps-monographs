@@ -1,0 +1,88 @@
+{
+  "case_count": 29,
+  "success_count": 9,
+  "failure_count": 20,
+  "success_rate": 0.3103448275862069,
+  "success_repeated_correct_action_candidate_count": 3,
+  "success_repeated_correct_action_candidate_rate": 0.3333333333333333,
+  "success_any_gold_before_end_rate": 0.6666666666666666,
+  "success_action_gold_rate": 0.3333333333333333,
+  "success_observation_gold_rate": 0.6666666666666666,
+  "success_explicit_main_finish_rate": 0.1111111111111111,
+  "success_auxiliary_finish_rate": 1.0,
+  "success_post_gold_repeat_action_rate": 0.1111111111111111,
+  "success_post_gold_duplicate_doc_rate": 0.2222222222222222,
+  "success_fold_rate": 0.8888888888888888,
+  "failure_fold_rate": 0.55,
+  "success_mean_fold_coverage_drop": 0.0625,
+  "failure_mean_fold_coverage_drop": 0.43333333333333335,
+  "failure_coverage_100_wrong_count": 4,
+  "failure_coverage_100_wrong_rate": 0.2,
+  "all_duplicate_search_rate": 0.4482758620689655,
+  "all_duplicate_docid_rate": 0.20689655172413793,
+  "all_main_fold_rate": 0.6551724137931034,
+  "all_branch_limit_rate": 0.10344827586206896,
+  "all_branch_context_limit_rate": 0.9310344827586207,
+  "all_unsupported_return_error_rate": 0.034482758620689655,
+  "mean_event_tokens_approx": 1876.716560509554,
+  "median_event_tokens_approx": 483.0,
+  "event_token_summary_by_type": {
+    "branch": {
+      "count": 85,
+      "mean": 265.38823529411764,
+      "median": 259,
+      "max": 494
+    },
+    "finish": {
+      "count": 8,
+      "mean": 154.25,
+      "median": 160.5,
+      "max": 182
+    },
+    "main_context_fold": {
+      "count": 19,
+      "mean": 822.0526315789474,
+      "median": 824,
+      "max": 935
+    },
+    "open_page": {
+      "count": 55,
+      "mean": 1157.9636363636364,
+      "median": 728,
+      "max": 4084
+    },
+    "return": {
+      "count": 53,
+      "mean": 224.69811320754718,
+      "median": 225,
+      "max": 281
+    },
+    "search": {
+      "count": 94,
+      "mean": 5045.54255319149,
+      "median": 5650.5,
+      "max": 8435
+    }
+  },
+  "repeated_correct_action_candidate_cases": [
+    2,
+    15,
+    17
+  ],
+  "full_coverage_wrong_cases": [
+    8,
+    16,
+    23,
+    26
+  ],
+  "success_post_gold_repeat_action_cases": [
+    2
+  ],
+  "success_post_gold_duplicate_doc_cases": [
+    15,
+    17
+  ],
+  "unsupported_return_error_cases": [
+    26
+  ]
+}

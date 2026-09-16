@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qwen3-8B FoldAgent TRACE 实验报告</title>
+  <style>
+    :root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:#18212b;background:#f5f7fa;line-height:1.5}body{margin:0}.wrap{max-width:960px;margin:0 auto;padding:36px 22px 56px}h1{margin:0 0 8px;font-size:30px}.sub{margin:0 0 28px;color:#52606d}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.card{display:block;padding:18px;background:#fff;border:1px solid #d9e0e7;border-radius:8px;color:inherit;text-decoration:none}.card:hover{border-color:#0b7285}.card h2{margin:0 0 7px;font-size:18px;color:#0b7285}.card p{margin:0;color:#52606d;font-size:14px}.foot{margin-top:24px;color:#697586;font-size:13px}@media(max-width:680px){.grid{grid-template-columns:1fr}.wrap{padding:24px 14px}h1{font-size:24px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Qwen3-8B FoldAgent TRACE 实验报告</h1>
+    <p class="sub">Step-100 轨迹诊断、同题 case 对照与 q16 coverage/delta 分析。</p>
+    <section class="grid">
+      <a class="card" href="importfix_training_report/importfix_训练曲线完整图像描述.html"><h2>300-step importfix 训练曲线</h2><p>2026-08-18 至 2026-08-24 的完整 loss、reward、TRACE 与阶段波动分析。</p></a>
+      <a class="card" href="2026-08-24-Qwen3-8B-FoldAgent-TRACE-case.html"><h2>同题 Case 对照</h2><p>训练模型与未训练 Qwen3-8B 的 6 个同题结果及事件对照。</p></a>
+      <a class="card" href="2026-08-24-Qwen3-8B-FoldAgent-TRACE-q16-delta.html"><h2>q16 Delta 对照</h2><p>未训练模型答对、step-100 答错的逐 action coverage 与 delta。</p></a>
+      <a class="card" href="trajectory_report_step100_diagnostics_zh_v2/diagnostics.html"><h2>中文增强诊断</h2><p>29 个 case 的完整中文轨迹诊断、图表和审计数据。</p></a>
+      <a class="card" href="trajectory_report_step100_diagnostics/diagnostics.html"><h2>原始诊断报告</h2><p>Step-100 原始诊断页面及配套 JSON、CSV、SVG 数据。</p></a>
+    </section>
+    <p class="foot">配套 token 信号文件保存在 trajectory_report_step100_token_signals 目录。</p>
+  </main>
+</body>
+</html>
