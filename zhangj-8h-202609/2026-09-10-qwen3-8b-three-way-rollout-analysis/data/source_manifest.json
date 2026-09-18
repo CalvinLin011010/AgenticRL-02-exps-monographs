@@ -31,6 +31,30 @@
       "metrics": "/gemini/space/TablePipeline-lr/runtime/experiments/browsecomp_qwen3_8b_trace_only_20260909_v2/train/metrics.jsonl"
     }
   },
+  "paired_analysis": {
+    "script": "../analyze_paired_cases.py",
+    "question_outcomes": "paired_question_outcomes.csv",
+    "statistics": "paired_statistics.json",
+    "typical_cases": "typical_rollout_cases.json",
+    "pattern_order": "FoldGRPO+Trace / no-Trace / Trace-only",
+    "score_semantics": "step-100 validation environment reward after question/family aggregation; not paper Pass@1 and not proof that every saved branch transcript has a semantically correct finish",
+    "representative_trajectory": "prefer finish_accepted rows, then shortest response-token trajectory"
+  },
+  "detailed_case_diagnostics": {
+    "script": "../analyze_case_trajectories.py",
+    "output": "detailed_rollout_cases.json",
+    "scope": "8 cases x 3 representative step-100 validation trajectories; 24 full transcripts",
+    "event_tokenizer": "local Qwen3-8B tokenizer, add_special_tokens=false",
+    "event_units": "reasoning + tool action + following observation; k is an event index, not a token index",
+    "gold_terms": "casefolded unique alphanumeric content terms after the embedded stopword list",
+    "coverage_proxy": "coverage=active unique gold terms / unique gold content terms; d=max(0.1,1-coverage); V=-log(d); delta=V_k-V_(k-1)",
+    "warning": "coverage delta is an algebraic lexical proxy, not saved TRACE Eq.(7) likelihood credit; validation has no frozen-reference teacher-forced gold log-likelihood"
+  },
+  "paper_alignment": {
+    "trace_primary_control": "FoldGRPO+Trace versus no-Trace; Trace-only is a project-specific zero-outcome-weight ablation",
+    "trace_missing": "per-turn ell_bar, d_k, V_k, delta_k, K-step credit correlation and ranking diagnostics",
+    "context_folding_missing": "paper-equivalent Pass@1, peak active context, main trajectory length and scope accuracy"
+  },
   "public_reference": "https://calvinlin011010.github.io/Agentic_RL/20260825-FoldAgent_Trace/",
   "public_reference_note": "29-case diagnostic: 9/29 success, 44.8% repeated-search cases, 65.5% main-fold cases; definition reference only, not a numeric baseline."
 }

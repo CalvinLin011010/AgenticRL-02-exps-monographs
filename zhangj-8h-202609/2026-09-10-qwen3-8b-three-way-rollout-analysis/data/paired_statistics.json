@@ -1,0 +1,118 @@
+{
+  "question_count": 150,
+  "pattern_order": "FoldGRPO+Trace / no-Trace / Trace-only",
+  "patterns": {
+    "000": 66,
+    "001": 13,
+    "010": 7,
+    "011": 11,
+    "100": 7,
+    "101": 15,
+    "110": 8,
+    "111": 23
+  },
+  "by_difficulty": {
+    "easy": {
+      "n": 50,
+      "patterns": {
+        "000": 16,
+        "010": 2,
+        "011": 6,
+        "101": 10,
+        "110": 2,
+        "111": 14
+      },
+      "successes": {
+        "trace_foldgrpo": 26,
+        "no_trace": 24,
+        "trace_only": 30
+      }
+    },
+    "medium": {
+      "n": 50,
+      "patterns": {
+        "000": 23,
+        "001": 8,
+        "010": 4,
+        "011": 3,
+        "100": 3,
+        "101": 5,
+        "110": 3,
+        "111": 1
+      },
+      "successes": {
+        "trace_foldgrpo": 12,
+        "no_trace": 11,
+        "trace_only": 17
+      }
+    },
+    "hard": {
+      "n": 50,
+      "patterns": {
+        "000": 27,
+        "001": 5,
+        "010": 1,
+        "011": 2,
+        "100": 4,
+        "110": 3,
+        "111": 8
+      },
+      "successes": {
+        "trace_foldgrpo": 15,
+        "no_trace": 14,
+        "trace_only": 15
+      }
+    }
+  },
+  "pairwise": [
+    {
+      "a": "trace_foldgrpo",
+      "b": "no_trace",
+      "a_label": "FoldGRPO+Trace",
+      "b_label": "no-Trace",
+      "both_correct": 31,
+      "a_only_correct": 22,
+      "b_only_correct": 18,
+      "neither_correct": 79,
+      "delta_pp": 2.6666666666666665,
+      "mcnemar_exact_p": 0.6358280026288412
+    },
+    {
+      "a": "trace_only",
+      "b": "no_trace",
+      "a_label": "Trace-only",
+      "b_label": "no-Trace",
+      "both_correct": 34,
+      "a_only_correct": 28,
+      "b_only_correct": 15,
+      "neither_correct": 73,
+      "delta_pp": 8.666666666666666,
+      "mcnemar_exact_p": 0.0659940344557981
+    },
+    {
+      "a": "trace_only",
+      "b": "trace_foldgrpo",
+      "a_label": "Trace-only",
+      "b_label": "FoldGRPO+Trace",
+      "both_correct": 38,
+      "a_only_correct": 24,
+      "b_only_correct": 15,
+      "neither_correct": 73,
+      "delta_pp": 6.0,
+      "mcnemar_exact_p": 0.19959086691960692
+    }
+  ],
+  "independent_evaluation": {
+    "n": 150,
+    "metric": "local-Qwen hybrid accepted; one independently generated rollout per question",
+    "no_trace_successes": 24,
+    "trace_only_successes": 22,
+    "both_correct": 14,
+    "no_trace_only_correct": 10,
+    "trace_only_only_correct": 8,
+    "neither_correct": 118,
+    "trace_only_minus_no_trace_pp": -1.3333333333333333,
+    "mcnemar_exact_p": 0.8145294189453125,
+    "trace_foldgrpo": "missing: no saved same-protocol independent evaluation"
+  }
+}
