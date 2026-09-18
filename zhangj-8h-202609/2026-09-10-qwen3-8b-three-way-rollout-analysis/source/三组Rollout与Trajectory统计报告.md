@@ -128,7 +128,26 @@ Validation response token P95 为 30,956 / 30,738 / 31,153；三组都靠近 32,
 
 历史 `browsecomp_qwen3_8b_trace_importfix_20260818_0205` 不是本报告的 Trace+FoldGRPO run，且名称虽包含 FoldAgent，保存配置的 advantage estimator 实际是 `agentgrpo`，不是 `foldgrpo`。它与当前 run 的训练配置、checkpoint 和 grader 均不同，只能按列作初步旁证；旧 scorer 已确认明显高估。详见 [zhangj-calvin 的实验谱系说明](../../../../00-docs/experiments/zhangj-calvin/foldagent-1/2026-08-30-Qwen3-4B-Thinking训练设计错误复盘与全量训练推理方案/README.md) 与 [完整 150 题评测报告](../../../../00-docs/experiments/wanghb-calvin/foldagent-1/2026-08-24-Qwen3-8B-FoldAgent-TRACE科研汇报-修订版/README.md)。
 
-## 8. 与公开 FoldAgent Trace 诊断的关系
+## 8. 历史 FoldGRPO / TRACE 结果的可比性核对
+
+本次在 lr/00-docs/experiments/wanghb-calvin 与 lr/00-docs/experiments/zhangj-calvin 中复核了历史记录。结论是：**没有找到与当前 Qwen3-8B、202609 三组运行完全同口径且明确属于 FoldGRPO+Trace 的历史独立评测结果**。历史材料中有两类容易混淆的结果：
+
+| 历史材料 | 实际设置 | 可核对结果 | 能否作为当前 FoldGRPO+Trace 结果 |
+|---|---|---:|---|
+| wanghb-calvin，2026-08-13 Qwen3-4B-Thinking-2507 FoldGRPO 完整总结 | Qwen3-4B-Thinking-2507 + FoldGRPO + search_branch | 最终离线 strict/本地评测 22/150 = 14.67%；训练内 validation 最终约 5/150 | 否，backbone、run、时间和评测产物不同；只能作历史 FoldGRPO 背景 |
+| wanghb-calvin，2026-08-24 Qwen3-8B FoldAgent-TRACE 修订报告 | Qwen3-8B + **AgentGRPO** + FoldAgent search_branch + frozen-reference online TRACE | step 100 historical strict 16/150 = 10.67%，DeepSeek 23/150 = 15.33%；step 300 strict 14/150 = 9.33%，DeepSeek 27/150 = 18.00% | 否，文档明确不是纯 FoldGRPO；且使用历史 deepseek-v4-flash |
+| zhangj-calvin，2026-08-06 Qwen3-8B TP2 BrowseComp 全量分析 | Qwen3-8B 推理/本地 judge 基线，非当前 FoldGRPO+Trace 训练 run | 本地 judge 35/150 = 23.33%；其中确定性 em_score 仅 25/150 = 16.67% | 否，非当前训练设置，且不是严格统一 grader |
+
+4B 历史结果的原始记录为 22/150，但不能拿来填当前表格的 FoldGRPO+Trace 行。历史 8B AgentGRPO+TRACE 的 strict/DeepSeek 数字也只能作为旁证，不能与当前 no-Trace、Trace-only 的独立评测直接做同实验比较。当前三组中 FoldGRPO+Trace 缺失同口径的一题一条独立评测输出，仍应记为 —，不能从历史数字或 validation 的 53/150 反推。
+
+此外，历史 8B 报告明确指出旧 scorer 假阳性严重：step 300 的旧 scorer 为 59/150 = 39.3%，但 strict/TRACE normalized EM 只有 14/150 = 9.3%；因此历史表中的 scorer 也必须按列解释，不能把旧 score 当语义准确率。详细来源：
+
+- [4B FoldGRPO 完整实验总结](../../../../00-docs/experiments/wanghb-calvin/foldagent-1/2026-08-13-Qwen3-4B-Thinking-2507-FoldGRPO完整实验总结/README.md)
+- [8B FoldAgent-TRACE 修订报告](../../../../00-docs/experiments/wanghb-calvin/foldagent-1/2026-08-24-Qwen3-8B-FoldAgent-TRACE科研汇报-修订版/README.md)
+- [8B 历史 scorer/奖励链复盘](../../../../00-docs/experiments/wanghb-calvin/foldagent-1/2026-08-22-Qwen3-8B实验结果、评分修复与性能下降完整复盘/README.md)
+- [8B TP2 历史评测分析](../../../../00-docs/experiments/zhangj-calvin/foldagent-1/2026-08-06-Qwen3-8B-TP2-BrowseComp全量实验结果分析/README.md)
+
+## 9. 与公开 FoldAgent Trace 诊断的关系
 
 参考页面：[Qwen3-8B FoldAgent TRACE 实验报告](https://calvinlin011010.github.io/Agentic_RL/20260825-FoldAgent_Trace/)，源码入口：[CalvinLin011010/Agentic_RL](https://github.com/CalvinLin011010/Agentic_RL)。公开中文增强诊断报告针对 29 个显式 main+branch 重建 case，报告：
 
@@ -140,7 +159,7 @@ Validation response token P95 为 30,956 / 30,738 / 31,153；三组都靠近 32,
 
 本报告借用了“逐轨迹工具事件、重复检索、context fold、token evidence 长度、成功/失败条件切片”的分析框架，但不把公开数字当基线。原因是公开报告只有 29 个诊断 case，并采用更宽的重复检索/主 fold 定义；本地统计覆盖 293-321 条 validation trajectory，exact duplicate search 更保守。公开页面可从服务器访问；GitHub 源码在本次核验时经代理返回 503，因此未复制其代码或中间数据。
 
-## 9. 综合判断
+## 10. 综合判断
 
 1. Trace-only 确实改变了行为：保留 rollout 更多、aborted ratio 最低、validation success 最高，但轨迹和 observation 最长，并出现额外 overlong masking。
 2. no-Trace 的主要问题是失败轨迹膨胀：错误样本工具调用和 branch 明显多于正确样本。
@@ -149,7 +168,7 @@ Validation response token P95 为 30,956 / 30,738 / 31,153；三组都靠近 32,
 5. 三组 rollout 数量并不完全相同，Trace-only 的更高 retained count 是潜在 compute/sample confound。下一轮应固定实际 retained trajectories 或报告按有效 trajectory 归一化的训练预算。
 6. 建议至少做 3 个 matched seeds，并新增 semantic duplicate query、每题累计 tool budget、fold 前后 evidence retention、success-per-1k-context-token 和 overlong-mask 后的样本去向统计。
 
-## 10. 产物
+## 11. 产物
 
 - [逐 step 训练指标](../data/training_step_metrics.csv)
 - [逐 trajectory 明细](../../../../01-exps/zhangj-8h-202609/2026-09-10-qwen3-8b-three-way-rollout-analysis/data/trajectory_details.csv)
