@@ -50,6 +50,13 @@
     "coverage_proxy": "coverage=active unique gold terms / unique gold content terms; d=max(0.1,1-coverage); V=-log(d); delta=V_k-V_(k-1)",
     "warning": "coverage delta is an algebraic lexical proxy, not saved TRACE Eq.(7) likelihood credit; validation has no frozen-reference teacher-forced gold log-likelihood"
   },
+  "validation_semantic_audit": {
+    "script": "../audit_validation_semantics.py",
+    "output": "validation_semantic_audit.json",
+    "mapping_check": "all 929 rows mapped by full benchmark query and gts matched the same gold; substring-only search-result matches are not used",
+    "q254": "Trace-only score=1 but finish answer Third Eye Blind / Out of the Vein versus gold The Bangles, Everything; grader_false_positive_needs_review",
+    "scope_limit": "strict answer equality and gold-string presence are conservative evidence flags, not a replacement semantic judge"
+  },
   "paper_alignment": {
     "trace_primary_control": "FoldGRPO+Trace versus no-Trace; Trace-only is a project-specific zero-outcome-weight ablation",
     "trace_missing": "per-turn ell_bar, d_k, V_k, delta_k, K-step credit correlation and ranking diagnostics",

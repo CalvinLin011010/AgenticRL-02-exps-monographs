@@ -8,6 +8,7 @@
 - [8 案例完整轨迹、coverage 与 token 诊断](./diagnostics.html#cases)
 - [诊断页生成脚本](./build_diagnostics.py)
 - [完整案例轨迹 JSON](./data/detailed_rollout_cases.json)
+- [validation score / finish / gold 语义审计](./data/validation_semantic_audit.json)
 - [新增派生统计](./data/derived_statistics.json)
 - [逐 step 训练指标](./data/training_step_metrics.csv)
 - [Step-100 validation 汇总](./data/validation_step100_summary.csv)
