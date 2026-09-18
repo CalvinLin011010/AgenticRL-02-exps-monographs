@@ -1,0 +1,186 @@
+{
+  "definition": {
+    "protocol": "independent one-answer-per-question evaluation; not the step-100 validation transcript",
+    "historical_strict": "historical strict normalized EM field from the saved audit",
+    "deepseek": "deepseek-flash, temperature 0, accepted iff verdict=correct and confidence>=0.8; parse/API errors fail closed",
+    "missing": "FoldGRPO+Trace has no same-protocol independent output saved; do not impute it"
+  },
+  "cases": {
+    "1055": {
+      "Trace-only": {
+        "reference_answer": "Escaping the Memory",
+        "candidate_answer": "City of Light",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate title 'City of Light' does not match the reference answer 'Escaping the Memory'.",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      },
+      "no-Trace": {
+        "reference_answer": "Escaping the Memory",
+        "candidate_answer": "Whiskey in the Jar",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate title \"Whiskey in the Jar\" does not match the reference title \"Escaping the Memory.\"",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      }
+    },
+    "192": {
+      "Trace-only": {
+        "reference_answer": "Dr. Kang Se Hoon",
+        "candidate_answer": "Tony Lewis",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate names Tony Lewis, while the reference answer identifies Dr. Kang Se Hoon as the individual charged; this is a different entity.",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      },
+      "no-Trace": {
+        "reference_answer": "Dr. Kang Se Hoon",
+        "candidate_answer": "Mohbad",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate names Mohbad, but the reference answer identifies the charged individual as Dr. Kang Se Hoon.",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      }
+    },
+    "254": {
+      "Trace-only": {
+        "reference_answer": "The Bangles, Everything",
+        "candidate_answer": "The band is The Cure, and their third full-length album is \"Disintegration,\" released in 1989. The concert was held at the University of Texas at Austin in 1990.",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate names The Cure and Disintegration, while the reference answer is The Bangles and Everything.",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      },
+      "no-Trace": {
+        "reference_answer": "The Bangles, Everything",
+        "candidate_answer": "The band is The Cure, and their third full-length album is \"Disintegration\" (1989). The university is Stanford, which meets all criteria: a land-grant institution founded in 1885 [83530], alumni including Kevin Spacey (1999 Academy Award winner) [3], David Pack (PhD in the 1970s) [4], and Jerry Yang (Fortune 500 CEO) graduated in 1989, the same year as the band's concert.",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate identifies The Cure and Disintegration, whereas the reference answer specifies The Bangles and Everything.",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      }
+    },
+    "587": {
+      "Trace-only": {
+        "reference_answer": "Daegu",
+        "candidate_answer": "Cloyster",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The reference answer is the city Daegu, while the candidate answer is the Pokemon Cloyster, which does not match the requested city.",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      },
+      "no-Trace": {
+        "reference_answer": "Daegu",
+        "candidate_answer": "Lucario",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate provides a Pokemon name ('Lucario') instead of the requested city, which is Daegu.",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      }
+    },
+    "68": {
+      "Trace-only": {
+        "reference_answer": "Professor Trefor Jenkins, Benjamin Pogrund Medal for Advancing Non-Racialism",
+        "candidate_answer": "Trefor Jenkins",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 0.99,
+        "deepseek_reason": "The candidate provides the correct individual's name but omits the required late-1990s award from the reference answer.",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      },
+      "no-Trace": {
+        "reference_answer": "Professor Trefor Jenkins, Benjamin Pogrund Medal for Advancing Non-Racialism",
+        "candidate_answer": "Trefor Jenkins",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate gives the correct individual but omits the requested late-1990s award, the Benjamin Pogrund Medal for Advancing Non-Racialism.",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      }
+    },
+    "836": {
+      "Trace-only": {
+        "reference_answer": "Tina Tutkova",
+        "candidate_answer": "Elizabeth Mitchell",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate names Elizabeth Mitchell, which does not match the reference answer Tina Tutkova.",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      },
+      "no-Trace": {
+        "reference_answer": "Tina Tutkova",
+        "candidate_answer": "Nurse from \"Another\" (2012)",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate does not provide the required full name and instead only identifies a nurse role and series.",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      }
+    },
+    "863": {
+      "Trace-only": {
+        "reference_answer": "Eno Ebele Jerry ",
+        "candidate_answer": "Eno Ebele Jerry",
+        "deepseek_verdict": "correct",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate answer exactly matches the reference answer.",
+        "deepseek_accepted": 1,
+        "historical_strict_trace_em": 1,
+        "api_error": ""
+      },
+      "no-Trace": {
+        "reference_answer": "Eno Ebele Jerry ",
+        "candidate_answer": "Eno Ebele Jerry",
+        "deepseek_verdict": "correct",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate answer exactly matches the reference answer.",
+        "deepseek_accepted": 1,
+        "historical_strict_trace_em": 1,
+        "api_error": ""
+      }
+    },
+    "886": {
+      "Trace-only": {
+        "reference_answer": "Legion; Season 1; Chapter 5",
+        "candidate_answer": "Legion, Season 1, Episode 5: \"Chapter 5\"",
+        "deepseek_verdict": "correct",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate matches the reference's show, season, and episode title, adding only the standard episode-number designator.",
+        "deepseek_accepted": 1,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      },
+      "no-Trace": {
+        "reference_answer": "Legion; Season 1; Chapter 5",
+        "candidate_answer": "The TV show is **\"The OA\"**, Season 1, Episode 1 titled **\"The OA\"**.",
+        "deepseek_verdict": "incorrect",
+        "deepseek_confidence": 1.0,
+        "deepseek_reason": "The candidate identifies The OA, Season 1, Episode 1, while the reference answer is Legion, Season 1, Chapter 5.",
+        "deepseek_accepted": 0,
+        "historical_strict_trace_em": 0,
+        "api_error": ""
+      }
+    }
+  }
+}

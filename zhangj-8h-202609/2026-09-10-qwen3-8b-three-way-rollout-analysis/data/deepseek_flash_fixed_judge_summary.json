@@ -1,0 +1,63 @@
+{
+  "model": "deepseek-flash",
+  "endpoint": "https://api.deepseek.com/v1",
+  "temperature": 0,
+  "confidence_threshold": 0.8,
+  "contract": "correct and confidence >= 0.8; abstain/API/parse errors fail closed",
+  "total_completed": 300,
+  "runs": {
+    "no-Trace": {
+      "cases": 150,
+      "deepseek_accepted": 25,
+      "api_errors": 3,
+      "by_difficulty": {
+        "easy": {
+          "cases": 50,
+          "deepseek_accepted": 20,
+          "api_errors": 2,
+          "historical_strict_trace_em": 16
+        },
+        "hard": {
+          "cases": 50,
+          "deepseek_accepted": 1,
+          "api_errors": 1,
+          "historical_strict_trace_em": 1
+        },
+        "medium": {
+          "cases": 50,
+          "deepseek_accepted": 4,
+          "api_errors": 0,
+          "historical_strict_trace_em": 3
+        }
+      },
+      "historical_strict_trace_em": 20
+    },
+    "Trace-only": {
+      "cases": 150,
+      "deepseek_accepted": 22,
+      "api_errors": 3,
+      "by_difficulty": {
+        "easy": {
+          "cases": 50,
+          "deepseek_accepted": 18,
+          "api_errors": 1,
+          "historical_strict_trace_em": 13
+        },
+        "hard": {
+          "cases": 50,
+          "deepseek_accepted": 0,
+          "api_errors": 1,
+          "historical_strict_trace_em": 0
+        },
+        "medium": {
+          "cases": 50,
+          "deepseek_accepted": 4,
+          "api_errors": 1,
+          "historical_strict_trace_em": 1
+        }
+      },
+      "historical_strict_trace_em": 14
+    }
+  },
+  "historical_strict_normalization": "NFKC + casefold + remove Unicode punctuation + remove English articles a/an/the + whitespace collapse + equality"
+}
